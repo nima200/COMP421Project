@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="DB2 (LUW) - cs421@comp421.cs.mcgill.ca" uuid="f4beafb5-9926-4cdc-a7ca-53dcbee6ceb2">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" />
+      <secret-storage>master_key</secret-storage>
+      <first-sync>true</first-sync>
+      <user-name>CS421G42</user-name>
+    </data-source>
+  </component>
+</project>
