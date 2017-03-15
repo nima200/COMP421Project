@@ -11,6 +11,7 @@ public class Test {
     private JLabel _headerLabel;
     private JLabel _statusLabel;
     private JPanel _controlPanel;
+    private JTextPane _textPane;
 
 
     public Test() {
@@ -20,10 +21,15 @@ public class Test {
     private void PrepareGUI() {
         _mainFrame = new JFrame("Test!");
         _mainFrame.setSize(600,600);
-        _mainFrame.setLayout(new GridLayout(3,1));
-        _headerLabel = new JLabel("",JLabel.CENTER);
-        _statusLabel = new JLabel("",JLabel.CENTER);
-        _statusLabel.setSize(350,100);
+        _mainFrame.setLayout(new GridLayout(1,1));
+//        _headerLabel = new JLabel("",JLabel.CENTER);
+//        _statusLabel = new JLabel("",JLabel.CENTER);
+        _textPane = new JTextPane();
+        _textPane.setSize(500,500);
+        _textPane.setEditable(false);
+
+        JScrollPane scrollPane = new JScrollPane(_textPane);
+
         // FOR PROGRAM TO EXIT WHEN PAGE CLOSED!
         _mainFrame.addWindowListener(new WindowAdapter() {
             public void windowClosing(WindowEvent e) {
@@ -32,14 +38,15 @@ public class Test {
         });
         _controlPanel = new JPanel();
         _controlPanel.setLayout(new FlowLayout());
-        _mainFrame.add(_headerLabel);
-        _mainFrame.add(_statusLabel);
+//        _mainFrame.add(_headerLabel);
+//        _mainFrame.add(_statusLabel);
         _mainFrame.add(_controlPanel);
+        _mainFrame.add(scrollPane, JComponent.CENTER_ALIGNMENT);
         _mainFrame.setVisible(true);
     }
 
     private void ShowEventDemo() {
-        _headerLabel.setText("Control in action: Button");
+//        _headerLabel.setText("Control in action: Button");
 
         // CREATION OF THE BUTTONS
         JButton okButton = new JButton("OK");
@@ -72,7 +79,8 @@ public class Test {
 
         // FRAME
         Test test = new Test();
-        test.ShowEventDemo();
+//        test.ShowEventDemo();
+        test.QueryCustomers(statement);
     }
 
     private class ButtonClickListener implements ActionListener{
@@ -86,6 +94,28 @@ public class Test {
             } else  if ( command.equals("CANCEL") ) {
                 _statusLabel.setText("Cancel Button clicked.");
             }
+        }
+    }
+
+    public void QueryCustomers(Statement statement) {
+        int sqlCode;
+        String sqlState;
+        try {
+            java.sql.ResultSet rs = statement.executeQuery("SELECT * FROM CUSTOMER");
+            while (rs.next()) {
+                String email = rs.getString(1);
+                String lastName = rs.getString(2);
+                String firstName = rs.getString(3);
+                String password = rs.getString(4);
+                _textPane.setText(_textPane.getText()
+                        + " NAME: " + lastName + ", " + firstName + "\n"
+                        + " EMAIL: " + email + "\n"
+                        + " PASSWORD: " + password + "\n");
+            }
+        } catch (SQLException e) {
+            sqlCode = e.getErrorCode();
+            sqlState = e.getSQLState();
+            System.out.println("CODE: " + sqlCode + " STATE: " + sqlState);
         }
     }
 }
