@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal">
-    <data-source name="DB2 (LUW) - cs421@comp421.cs.mcgill.ca" uuid="f4beafb5-9926-4cdc-a7ca-53dcbee6ceb2">
+    <data-source name="cs421@comp421.cs.mcgill.ca" uuid="77e48001-9ac8-477a-aa05-aac0e0ba2e1a">
       <database-info product="DB2/LINUXX8664" version="SQL10053" jdbc-version="4.0" driver-name="IBM Data Server Driver for JDBC and SQLJ" driver-version="4.7.85">
         <extra-name-characters>@#</extra-name-characters>
         <identifier-quote-string>&quot;</identifier-quote-string>
