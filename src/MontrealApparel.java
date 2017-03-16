@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import javax.swing.*;
-import javax.swing.plaf.nimbus.State;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
@@ -32,6 +31,7 @@ public class MontrealApparel extends JDialog {
         setContentPane(contentPane);
         setModal(true);
 
+        /* ACTION LISTENERS FOR BUTTONS TO RESPOND */
         buttonExit.addActionListener(e -> onCancel());
         viewYourOrdersButton.addActionListener(e -> onViewYourOrders());
         submitEidButton.addActionListener(e -> {
@@ -54,7 +54,7 @@ public class MontrealApparel extends JDialog {
             }
         });
         searchClothesButton.addActionListener(e -> onSearchClothes());
-
+        submitClothButton.addActionListener(e -> onSubmitClothSearch());
         // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         addWindowListener(new WindowAdapter() {
@@ -65,6 +65,37 @@ public class MontrealApparel extends JDialog {
 
         // call onCancel() on ESCAPE
         contentPane.registerKeyboardAction(e -> onCancel(), KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+    }
+
+    /* METHODS TRIGGERED ON BUTTON CLICKS */
+    private void onSubmitClothSearch() {
+        String color = colorDropDown.getSelectedItem().toString();
+        String modelName = clothModelNameTextField.getText().toString();
+        try {
+            Statement s = MakeConnection();
+            ResultSet rs = s.executeQuery("SELECT DISTINCT CLOTHINGMODEL.MODELNAME, CLOTHINGUNIT.COLOR, CLOTHINGUNIT.RESTOCKDATE, UNITSTOCKING.QUANTITYAVAILABLE " +
+                    "FROM CLOTHINGUNIT, CLOTHINGMODEL, UNITSTOCKING " +
+                    "WHERE CLOTHINGMODEL.MODELNAME = CLOTHINGUNIT.MODELNAME AND " +
+                    "CLOTHINGMODEL.MODELNAME = UNITSTOCKING.MODELNAME AND " +
+                    "CLOTHINGUNIT.COLOR = UNITSTOCKING.COLOR AND " +
+                    "CLOTHINGUNIT.COLOR = '" + color + "' AND " +
+                    "CLOTHINGMODEL.MODELNAME = '" + modelName +
+                    "' GROUP BY CLOTHINGMODEL.MODELNAME, CLOTHINGUNIT.COLOR, RESTOCKDATE, QUANTITYAVAILABLE");
+            while (rs.next()) {
+                String mname = rs.getString(1);
+                String col = rs.getString(2);
+                String restockDate = rs.getString(3);
+                String qAvail = rs.getString(4);
+                outputPane.setText(outputPane.getText() +
+                                    "Model Name: " + mname + "\n" +
+                                    "Color: " + col + "\n" +
+                                    "Restock Date: " + restockDate + "\n" +
+                                    "Quantity Available: " + qAvail + "\n" +
+                                    "##############################" + "\n");
+            }
+        } catch (SQLException e) {
+            System.out.println("Connection failed!");
+        }
     }
 
     private void onSearchClothes() {
@@ -215,7 +246,6 @@ public class MontrealApparel extends JDialog {
      * @param clothingUnitName      The name of the clothing unit to find colors for.
      */
     private void QueryUnitColors(String clothingUnitName) {
-
         try {
             Statement s = MakeConnection();
             try {

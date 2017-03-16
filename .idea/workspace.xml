@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24bfe8b-b685-49b4-bc2a-bdce7825bdbd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$1.class" afterPath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel.class" afterPath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Nima.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Nima.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MontrealApparel.java" afterPath="$PROJECT_DIR$/src/MontrealApparel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -119,19 +119,34 @@
       <file leaf-file-name="MontrealApparel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MontrealApparel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="137" column="37" lean-forward="true" selection-start-line="137" selection-start-column="37" selection-end-line="137" selection-end-column="37" />
+            <state relative-caret-position="184">
+              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5436#5437#0" expanded="true" />
-                <element signature="e#5461#5462#0" expanded="true" />
+                <element signature="method#onSearchClothes#0;class#MontrealApparel#0" expanded="false" />
+                <element signature="method#onSelectAllTime#0;class#MontrealApparel#0" expanded="false" />
+                <element signature="method#onSelectThisMonth#0;class#MontrealApparel#0" expanded="false" />
+                <element signature="method#onViewYourOrders#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#main#0;class#MontrealApparel#0" expanded="false" />
-                <marker date="1489629982286" expanded="true" signature="7441:7488" ph="SELECT missi... missingValue" />
-                <marker date="1489629982286" expanded="true" signature="7441:7514" ph="SELECT missi... missingValue" />
-                <marker date="1489629982286" expanded="true" signature="7441:7515" ph="SELECT missi... missingValue" />
-                <marker date="1489629982286" expanded="true" signature="8572:8619" ph="SELECT missi... missingValue" />
-                <marker date="1489629982286" expanded="true" signature="8572:8632" ph="SELECT missi... missingValue" />
-                <marker date="1489629982286" expanded="true" signature="9554:9788" ph="SELECT COLOR... CLOTHINGUNIT" />
+                <marker date="1489632904858" expanded="true" signature="3044:3129" ph="SELECT CLOTH... " />
+                <marker date="1489632904858" expanded="true" signature="3044:3233" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489632904858" expanded="true" signature="3044:3288" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489632904858" expanded="true" signature="3044:3290" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489632904858" expanded="true" signature="3044:3291" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489632904858" expanded="true" signature="3044:3313" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489632904858" expanded="true" signature="3044:3317" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489632904858" expanded="true" signature="3044:3395" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489632904858" expanded="true" signature="3044:3510" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489632904858" expanded="true" signature="3044:3511" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489632904858" expanded="true" signature="3044:3581" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489632904858" expanded="true" signature="3044:3582" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489632904858" expanded="true" signature="3044:3706" ph="SELECT DISTI... CLOTHINGUNIT" />
+                <marker date="1489632904858" expanded="true" signature="9289:9336" ph="SELECT missi... missingValue" />
+                <marker date="1489632904858" expanded="true" signature="9289:9362" ph="SELECT missi... missingValue" />
+                <marker date="1489632904858" expanded="true" signature="9289:9363" ph="SELECT missi... missingValue" />
+                <marker date="1489632904858" expanded="true" signature="10420:10467" ph="SELECT missi... missingValue" />
+                <marker date="1489632904858" expanded="true" signature="10420:10480" ph="SELECT missi... missingValue" />
+                <marker date="1489632904858" expanded="true" signature="11401:11635" ph="SELECT COLOR... CLOTHINGUNIT" />
               </folding>
             </state>
           </provider>
@@ -594,7 +609,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/db2jcc4.jar!/" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="DB2 (LUW)&#10;DB2 (JTOpen)" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="179" />
@@ -1028,7 +1043,7 @@
       <workItem from="1489595337391" duration="3172000" />
       <workItem from="1489613313490" duration="688000" />
       <workItem from="1489614035023" duration="145000" />
-      <workItem from="1489614271249" duration="15876000" />
+      <workItem from="1489614271249" duration="18595000" />
     </task>
     <task id="LOCAL-00001" summary="Started working on the actual file and our GUI.&#10;Implemented one of the &quot;alternatives&quot; for Q2">
       <created>1489624326914</created>
@@ -1044,11 +1059,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489630046214</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Commenting code as well as implementing search on clothing units">
+      <created>1489630187902</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1489630187902</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26452000" />
+    <option name="totallyTimeSpent" value="29171000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1279,19 +1301,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MontrealApparel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="137" column="37" lean-forward="true" selection-start-line="137" selection-start-column="37" selection-end-line="137" selection-end-column="37" />
+        <state relative-caret-position="184">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5436#5437#0" expanded="true" />
-            <element signature="e#5461#5462#0" expanded="true" />
+            <element signature="method#onSearchClothes#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSelectAllTime#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSelectThisMonth#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onViewYourOrders#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#main#0;class#MontrealApparel#0" expanded="false" />
-            <marker date="1489629982286" expanded="true" signature="7441:7488" ph="SELECT missi... missingValue" />
-            <marker date="1489629982286" expanded="true" signature="7441:7514" ph="SELECT missi... missingValue" />
-            <marker date="1489629982286" expanded="true" signature="7441:7515" ph="SELECT missi... missingValue" />
-            <marker date="1489629982286" expanded="true" signature="8572:8619" ph="SELECT missi... missingValue" />
-            <marker date="1489629982286" expanded="true" signature="8572:8632" ph="SELECT missi... missingValue" />
-            <marker date="1489629982286" expanded="true" signature="9554:9788" ph="SELECT COLOR... CLOTHINGUNIT" />
+            <marker date="1489632904858" expanded="true" signature="3044:3129" ph="SELECT CLOTH... " />
+            <marker date="1489632904858" expanded="true" signature="3044:3233" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489632904858" expanded="true" signature="3044:3288" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489632904858" expanded="true" signature="3044:3290" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489632904858" expanded="true" signature="3044:3291" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489632904858" expanded="true" signature="3044:3313" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489632904858" expanded="true" signature="3044:3317" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489632904858" expanded="true" signature="3044:3395" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489632904858" expanded="true" signature="3044:3510" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489632904858" expanded="true" signature="3044:3511" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489632904858" expanded="true" signature="3044:3581" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489632904858" expanded="true" signature="3044:3582" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489632904858" expanded="true" signature="3044:3706" ph="SELECT DISTI... CLOTHINGUNIT" />
+            <marker date="1489632904858" expanded="true" signature="9289:9336" ph="SELECT missi... missingValue" />
+            <marker date="1489632904858" expanded="true" signature="9289:9362" ph="SELECT missi... missingValue" />
+            <marker date="1489632904858" expanded="true" signature="9289:9363" ph="SELECT missi... missingValue" />
+            <marker date="1489632904858" expanded="true" signature="10420:10467" ph="SELECT missi... missingValue" />
+            <marker date="1489632904858" expanded="true" signature="10420:10480" ph="SELECT missi... missingValue" />
+            <marker date="1489632904858" expanded="true" signature="11401:11635" ph="SELECT COLOR... CLOTHINGUNIT" />
           </folding>
         </state>
       </provider>
