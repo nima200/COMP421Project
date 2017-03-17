@@ -53,15 +53,7 @@ public class MontrealApparel extends JDialog {
         /* ACTION LISTENERS FOR BUTTONS TO RESPOND */
         buttonExit.addActionListener(e -> onCancel());
         viewYourOrdersButton.addActionListener(e -> onViewYourOrders());
-        submitEidButton.addActionListener(e -> {
-            try {
-                onSubmitEid();
-            } catch (SQLException e1) {
-                int code = e1.getErrorCode();
-                String state = e1.getSQLState();
-                outputPane.setText("ERROR!!" + "\n" + "CODE: " + code + " STATE: " + state);
-            }
-        });
+        submitEidButton.addActionListener(e -> onSubmitEid());
         thisMonthCheckBox.addActionListener(e -> onSelectThisMonth());
         allTimeCheckBox.addActionListener(e -> onSelectAllTime());
         // When 'Enter' is pressed on the cloth model name search field, we query for the colors of that unit
@@ -108,6 +100,7 @@ public class MontrealApparel extends JDialog {
         searchOrderButton.addActionListener(e -> onSearchOrder());
         refundOrderButton.addActionListener(e -> onRefundOrder());
         modifyOrderButton.addActionListener(e -> onModifyOrder());
+        viewCardInfoButton.addActionListener(e -> onViewCardInfo());
         // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         addWindowListener(new WindowAdapter() {
@@ -118,6 +111,35 @@ public class MontrealApparel extends JDialog {
 
         // call onCancel() on ESCAPE key pressed
         contentPane.registerKeyboardAction(e -> onCancel(), KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+    }
+
+    /* ##########################################
+     * #   METHODS TRIGGERED ON BUTTON CLICKS   #
+     * ########################################## */
+    private void onViewCardInfo() {
+        String oid = (orderIDField.getText().length() > 0) ? orderIDField.getText() : "";
+        if (oid.length() == 0) {
+            outputPane.setText("Please enter a valid order ID!");
+        } else {
+            try {
+                Statement s = MakeConnection();
+                ResultSet rs = s.executeQuery("SELECT MODELNAME, SIZE, COLOR, QUANTITY FROM CARTDETAILS, ORDER WHERE CARTDETAILS.CARTID = ORDER.CARTID AND ORDERID = " + oid);
+                outputPane.setText(outputPane.getText() + "\n\n" + "########################" + "\n" +
+                        "CART DETAILS: " + "\n########################\n\n");
+                while (rs.next()) {
+                    String mname = rs.getString(1);
+                    String size = rs.getString(2);
+                    String color = rs.getString(3);
+                    String quantity = rs.getString(4);
+                    outputPane.setText(outputPane.getText() + "Model Name: " + mname +
+                            "\nModel Size: " + size + "\nModel Color: " + color + "\nQuantity: " + quantity +
+                            "\n-------------\n");
+                }
+                outputPane.setText(outputPane.getText() + "\n########################\n");
+            } catch (SQLException e) {
+                outputPane.setText("Connection failed!");
+            }
+        }
     }
 
     private void onModifyOrder() {
@@ -163,10 +185,8 @@ public class MontrealApparel extends JDialog {
                 String orderid = orderIDField.getText();
                 if (orderid.length() == 0) {
                     outputPane.setText("Please enter an order ID!");
-                    return;
                 } else if (!checkIfOrderValid(orderid)) {
                     outputPane.setText("Order was not found! Please try again.");
-                    return;
                 } else {
                     viewCardInfoButton.setVisible(true);
                     refundOrderButton.setVisible(true);
@@ -219,12 +239,9 @@ public class MontrealApparel extends JDialog {
         }
     }
 
-    /* ##########################################
-     * #   METHODS TRIGGERED ON BUTTON CLICKS   #
-     * ########################################## */
     private void onSubmitClothSearch() {
         String color = colorDropDown.getSelectedItem().toString();
-        String modelName = clothModelNameTextField.getText().toString();
+        String modelName = clothModelNameTextField.getText();
         try {
             Statement s = MakeConnection();
             ResultSet rs = s.executeQuery("SELECT DISTINCT CLOTHINGMODEL.MODELNAME, CLOTHINGUNIT.COLOR, CLOTHINGUNIT.RESTOCKDATE, UNITSTOCKING.QUANTITYAVAILABLE " +
@@ -271,42 +288,46 @@ public class MontrealApparel extends JDialog {
         }
     }
 
-    private void onSubmitEid() throws SQLException{
-        Statement s = MakeConnection();
-        /* If employee wants to query orders of this month, we order by handle date so that he knows what has to be done first */
-        if (thisMonthCheckBox.isSelected()) {
-            // Clear out the previous text in the output pane
-            outputPane.setText("");
-            // Get current year and month and append a "-01" at the end of that so that it's the beginning of this month
-            DateFormat df = new SimpleDateFormat("yyyy-MM");
-            Date dt = new Date();
-            String thisMonth = df.format(dt) + "-01";
-            String eid = employeeIDTextField.getText();
-            // MAKE SURE YOU ADD A ' BEFORE AND AFTER SENDING IN A DATE TO QUERY!
-            String condition = "ORDER.HANDLER = " + eid + " AND ORDER.HANDLEDATE > '" + thisMonth + "'";
-            ResultSet rs = SendStandardQuery(s, "DISTINCT ORDERID, HANDLEDATE", "EMPLOYEE, ORDER", condition, "HANDLEDATE");
-            while(rs.next()) {
-                int orderID = rs.getInt(1);
-                String handleDate = rs.getDate(2).toString();
-                outputPane.setText(outputPane.getText() +
-                                    "Order ID: " + orderID + "\n" +
-                                    "Handling deadline: " + handleDate + "\n" +
-                                    "##############" + "\n");
+    private void onSubmitEid() {
+        try {
+            Statement s = MakeConnection();
+            /* If employee wants to query orders of this month, we order by handle date so that he knows what has to be done first */
+            if (thisMonthCheckBox.isSelected()) {
+                // Clear out the previous text in the output pane
+                outputPane.setText("");
+                // Get current year and month and append a "-01" at the end of that so that it's the beginning of this month
+                DateFormat df = new SimpleDateFormat("yyyy-MM");
+                Date dt = new Date();
+                String thisMonth = df.format(dt) + "-01";
+                String eid = employeeIDTextField.getText();
+                // MAKE SURE YOU ADD A ' BEFORE AND AFTER SENDING IN A DATE TO QUERY!
+                String condition = "ORDER.HANDLER = " + eid + " AND ORDER.HANDLEDATE > '" + thisMonth + "'";
+                ResultSet rs = SendStandardQuery(s, "DISTINCT ORDERID, HANDLEDATE", "EMPLOYEE, ORDER", condition, "HANDLEDATE");
+                while (rs.next()) {
+                    int orderID = rs.getInt(1);
+                    String handleDate = rs.getDate(2).toString();
+                    outputPane.setText(outputPane.getText() +
+                            "Order ID: " + orderID + "\n" +
+                            "Handling deadline: " + handleDate + "\n" +
+                            "##############" + "\n");
+                }
+                /* If employee wants to query orders of all time, we order by ORDERID */
+            } else if (allTimeCheckBox.isSelected()) {
+                outputPane.setText("");
+                String eid = employeeIDTextField.getText();
+                String condition = "ORDER.HANDLER = " + eid;
+                ResultSet rs = SendStandardQuery(s, "DISTINCT ORDERID, HANDLEDATE", "EMPLOYEE, ORDER", condition, "ORDERID");
+                while (rs.next()) {
+                    int orderID = rs.getInt(1);
+                    String handleDate = rs.getDate(2).toString();
+                    outputPane.setText(outputPane.getText() +
+                            "Order id: " + orderID + "\n" +
+                            "Handling deadline: " + handleDate + "\n" +
+                            "##############" + "\n");
+                }
             }
-            /* If employee wants to query orders of all time, we order by ORDERID */
-        } else if (allTimeCheckBox.isSelected()) {
-            outputPane.setText("");
-            String eid = employeeIDTextField.getText();
-            String condition = "ORDER.HANDLER = " + eid;
-            ResultSet rs = SendStandardQuery(s, "DISTINCT ORDERID, HANDLEDATE", "EMPLOYEE, ORDER", condition, "ORDERID");
-            while(rs.next()) {
-                int orderID = rs.getInt(1);
-                String handleDate = rs.getDate(2).toString();
-                outputPane.setText(outputPane.getText() +
-                        "Order id: " + orderID + "\n" +
-                        "Handling deadline: " + handleDate + "\n" +
-                        "##############" + "\n");
-            }
+        } catch (SQLException e) {
+            outputPane.setText("Connection failed!");
         }
     }
 
@@ -443,7 +464,7 @@ public class MontrealApparel extends JDialog {
     /**
      * Attempts to connect to the database
      * @return        A statement that can be used to transfer queries/updates/etc to the database
-     * @throws SQLException
+     * @throws SQLException         In case the connection fails with the server, a SQL Exception is thrown
      */
     private Statement MakeConnection() throws SQLException{
         String url = "jdbc:db2://comp421.cs.mcgill.ca:50000/cs421";
@@ -573,8 +594,7 @@ public class MontrealApparel extends JDialog {
     private static String getToday() {
         DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
         Date dt = new Date();
-        String today = df.format(dt);
-        return today;
+        return df.format(dt);
     }
 
     /**
@@ -586,13 +606,9 @@ public class MontrealApparel extends JDialog {
         try {
             Statement s = MakeConnection();
             ResultSet rs = s.executeQuery("SELECT ORDERTYPE from ORDER WHERE ORDERID = " + orderid);
-            while (rs.next()) {
+            if (rs.next()) {
                 String otype = rs.getString(1);
-                if (!otype.equals("PURCHASE")) {
-                    return false;
-                } else {
-                    return true;
-                }
+                return otype.equals("PURCHASE");
             }
         } catch (SQLException e) {
             outputPane.setText("Connection failed!");
@@ -609,11 +625,7 @@ public class MontrealApparel extends JDialog {
         try {
             Statement s = MakeConnection();
             ResultSet rs = s.executeQuery("SELECT * FROM ORDER WHERE ORDERID = " + orderid);
-            if (!rs.next()) {
-                return false;
-            } else {
-                return true;
-            }
+            return rs.next();
         } catch (SQLException e) {
             outputPane.setText("Connection Failed!");
             return false;
