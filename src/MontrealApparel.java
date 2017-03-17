@@ -27,20 +27,23 @@ public class MontrealApparel extends JDialog {
     private JComboBox colorDropDown;
     private JButton submitClothButton;
     private JButton employeeLoginButton;
-    private JPanel loginPane;
+    private JPanel loginPanel;
     private JTextField usernameField;
     private JPasswordField passwordField;
     private JButton loginButton;
     private JButton createEmployeeButton;
-    private JPanel createEmployeePane;
+    private JPanel createEmployeePanel;
     private JTextField newPasswordField;
     private JTextField newEmploymentDateField;
     private JTextField newENameField;
     private JTextField newSalaryField;
-    private JLabel newENameLabel;
-    private JLabel newEmploymentDateLabel;
-    private JLabel newSalaryLabel;
-    private JLabel newPasswordLabel;
+    private JPanel changeOrderPanel;
+    private JTextField orderIDField;
+    private JButton searchOrderButton;
+    private JButton viewCardInfoButton;
+    private JButton refundOrderButton;
+    private JButton modifyOrderButton;
+    private String currentEmployee;
 
     private MontrealApparel() throws SQLException{
         setSize(1280,720);
@@ -90,11 +93,21 @@ public class MontrealApparel extends JDialog {
                 }
             }
         });
+        orderIDField.addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent e) {
+                if(e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    onSearchOrder();
+                }
+            }
+        });
         searchClothesButton.addActionListener(e -> onSearchClothes());
         submitClothButton.addActionListener(e -> onSubmitClothSearch());
         employeeLoginButton.addActionListener(e -> onEmployeeLogin());
         loginButton.addActionListener(e -> onLogin());
         createEmployeeButton.addActionListener(e -> onCreateEmployeeRequest());
+        searchOrderButton.addActionListener(e -> onSearchOrder());
+        refundOrderButton.addActionListener(e -> onRefundOrder());
+        modifyOrderButton.addActionListener(e -> onModifyOrder());
         // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         addWindowListener(new WindowAdapter() {
@@ -105,6 +118,105 @@ public class MontrealApparel extends JDialog {
 
         // call onCancel() on ESCAPE key pressed
         contentPane.registerKeyboardAction(e -> onCancel(), KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+    }
+
+    private void onModifyOrder() {
+        eidPanel.setVisible(false);
+        changeOrderPanel.setVisible(true);
+        loginPanel.setVisible(false);
+        searchClothesPanel.setVisible(false);
+    }
+
+    private void onRefundOrder() {
+        try {
+            Statement s = MakeConnection();
+            ResultSet rs = s.executeQuery("SELECT EMPLOYEE.EID, EMPLOYEE.ENAME FROM EMPLOYEE WHERE EID = " + currentEmployee);
+            String eid = "";
+            String ename = "";
+            String oid = "";
+            while (rs.next()) {
+                eid = rs.getString(1);
+                ename = rs.getString(2);
+                oid = orderIDField.getText();
+                if (!checkIfPurchase(oid)) {
+                    outputPane.setText("ORDER WAS ALREADY REFUNDED!\n##############################");
+                    onSearchOrder();
+                    return;
+                }
+            }
+            s.executeUpdate("UPDATE ORDER " +
+                    "SET ORDERTYPE = 'REFUNDED ON " + getToday() + " BY: " + ename + ", ID: " + eid + "' " +
+                    "WHERE ORDERID = " + oid);
+            String currentText = outputPane.getText();
+            outputPane.setText("ORDER WAS REFUNDED!\n##############################\n\n" + currentText);
+        } catch (SQLException e) {
+            int code = e.getErrorCode();
+            String state = e.getSQLState();
+            System.out.println("CODE: " + code + " STATE: " + state);
+            outputPane.setText("Connection failed!");
+        }
+    }
+
+    private void onSearchOrder() {
+        try {
+            Statement s = MakeConnection();
+                String orderid = orderIDField.getText();
+                if (orderid.length() == 0) {
+                    outputPane.setText("Please enter an order ID!");
+                    return;
+                } else if (!checkIfOrderValid(orderid)) {
+                    outputPane.setText("Order was not found! Please try again.");
+                    return;
+                } else {
+                    viewCardInfoButton.setVisible(true);
+                    refundOrderButton.setVisible(true);
+                    ResultSet rs = s.executeQuery("SELECT * FROM ORDER WHERE ORDERID = " + orderid);
+                    while (rs.next()) {
+                        String oid = rs.getString(1);
+                        String otype = rs.getString(2);
+                        String oPaymentMethod = rs.getString(3);
+                        String oFinalAmount = rs.getString(4);
+                        String oCustomerEmail = rs.getString(5);
+                        String oHandleDate = rs.getString(6);
+                        String oHandler = rs.getString(7);
+                        String oShippingID = rs.getString(8);
+                        String oBillingID = rs.getString(9);
+                        String oCartID = rs.getString(10);
+                        String oTrackingNumber = rs.getString(11);
+                        if (outputPane.getText().equals("ORDER WAS ALREADY REFUNDED!\n##############################")) {
+                            outputPane.setText(outputPane.getText() + "\n" + "ORDER DETAILS: \n--------------------------------------\n" +
+                                    "Order ID: " + oid + "\n" +
+                                    "Order Type: " + otype + "\n" +
+                                    "Order Payment Method: " + oPaymentMethod + "\n" +
+                                    "Order Final Amount: " + oFinalAmount + "\n" +
+                                    "Order Customer Email: " + oCustomerEmail + "\n" +
+                                    "Order Handle Date: " + oHandleDate + "\n" +
+                                    "Order Handler: " + oHandler + "\n" +
+                                    "Order Shipping ID: " + oShippingID + "\n" +
+                                    "Order Billing ID: " + oBillingID + "\n" +
+                                    "Order Card ID: " + oCartID + "\n" +
+                                    "Order Shipping Tracking Number: " + oTrackingNumber + "\n" +
+                                    "--------------------------------------");
+                        } else {
+                            outputPane.setText("ORDER DETAILS: \n--------------------------------------\n" +
+                                    "Order ID: " + oid + "\n" +
+                                    "Order Type: " + otype + "\n" +
+                                    "Order Payment Method: " + oPaymentMethod + "\n" +
+                                    "Order Final Amount: " + oFinalAmount + "\n" +
+                                    "Order Customer Email: " + oCustomerEmail + "\n" +
+                                    "Order Handle Date: " + oHandleDate + "\n" +
+                                    "Order Handler: " + oHandler + "\n" +
+                                    "Order Shipping ID: " + oShippingID + "\n" +
+                                    "Order Billing ID: " + oBillingID + "\n" +
+                                    "Order Card ID: " + oCartID + "\n" +
+                                    "Order Shipping Tracking Number: " + oTrackingNumber + "\n" +
+                                    "--------------------------------------");
+                        }
+                    }
+                }
+        } catch (SQLException e) {
+            outputPane.setText("Connection Failed!");
+        }
     }
 
     /* ##########################################
@@ -142,8 +254,9 @@ public class MontrealApparel extends JDialog {
 
     private void onSearchClothes() {
         searchClothesPanel.setVisible(true);
+        changeOrderPanel.setVisible(false);
         eidPanel.setVisible(false);
-        loginPane.setVisible(false);
+        loginPanel.setVisible(false);
     }
 
     private void onSelectAllTime() {
@@ -200,7 +313,8 @@ public class MontrealApparel extends JDialog {
     private void onViewYourOrders() {
         eidPanel.setVisible(true);
         searchClothesPanel.setVisible(false);
-        loginPane.setVisible(false);
+        changeOrderPanel.setVisible(false);
+        loginPanel.setVisible(false);
     }
 
     private void onCancel() {
@@ -208,13 +322,15 @@ public class MontrealApparel extends JDialog {
     }
 
     private void onEmployeeLogin() {
-        loginPane.setVisible(true);
+        loginPanel.setVisible(true);
+        changeOrderPanel.setVisible(false);
         searchClothesPanel.setVisible(false);
         eidPanel.setVisible(false);
     }
 
     private void onLogin() {
         String uname = usernameField.getText();
+        currentEmployee = uname;
         char[] pwd = passwordField.getPassword();
         if (uname.length() == 0 || pwd.length == 0) {
             outputPane.setText("Please enter a valid username and password!");
@@ -222,8 +338,9 @@ public class MontrealApparel extends JDialog {
         }
         if (validatePassword(uname, pwd)) {
             outputPane.setText("Login successful!");
+            modifyOrderButton.setVisible(true);
             createEmployeeButton.setVisible(true);
-            createEmployeePane.setVisible(true);
+            createEmployeePanel.setVisible(true);
             searchClothesButton.setVisible(true);
             viewYourOrdersButton.setVisible(true);
         }
@@ -423,11 +540,9 @@ public class MontrealApparel extends JDialog {
         return null;
     }
     /**
-     * <ul>
-     *     This method takes in a clothing unit name as a 'String' and queries into the database, looking for the
-     *     Colors that that unit has had. It does an equality join on CLOTHINGMODEL and CLOTHINGUNIT as well as checking
-     *     the modelname to be what was given as a parameter.
-     * </ul>
+     * This method takes in a clothing unit name as a 'String' and queries into the database, looking for the
+     * Colors that that unit has had. It does an equality join on CLOTHINGMODEL and CLOTHINGUNIT as well as checking
+     * the model name to be what was given as a parameter.
      * @param clothingUnitName      The name of the clothing unit to find colors for.
      */
     private void QueryUnitColors(String clothingUnitName) {
@@ -448,6 +563,60 @@ public class MontrealApparel extends JDialog {
             }
         } catch (SQLException e1) {
             outputPane.setText("Connection failed!");
+        }
+    }
+
+    /**
+     * Simple method to get today's date
+     * @return      Today's date in yyyy-MM-dd format
+     */
+    private static String getToday() {
+        DateFormat df = new SimpleDateFormat("yyyy-MM-dd");
+        Date dt = new Date();
+        String today = df.format(dt);
+        return today;
+    }
+
+    /**
+     * Given an order ID, this method queries into the database to check if the order was a purchase or not.
+     * @param orderid       The order ID
+     * @return              The result of the check. True if order type was 'PURCHASE', false if anything else.
+     */
+    private boolean checkIfPurchase(String orderid) {
+        try {
+            Statement s = MakeConnection();
+            ResultSet rs = s.executeQuery("SELECT ORDERTYPE from ORDER WHERE ORDERID = " + orderid);
+            while (rs.next()) {
+                String otype = rs.getString(1);
+                if (!otype.equals("PURCHASE")) {
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        } catch (SQLException e) {
+            outputPane.setText("Connection failed!");
+        }
+        return false;
+    }
+
+    /**
+     * Simple method to check if an order exists or not
+     * @param orderid           The order id to check for
+     * @return                  True or false whether the order exists in the database or not.
+     */
+    private boolean checkIfOrderValid(String orderid) {
+        try {
+            Statement s = MakeConnection();
+            ResultSet rs = s.executeQuery("SELECT * FROM ORDER WHERE ORDERID = " + orderid);
+            if (!rs.next()) {
+                return false;
+            } else {
+                return true;
+            }
+        } catch (SQLException e) {
+            outputPane.setText("Connection Failed!");
+            return false;
         }
     }
 }

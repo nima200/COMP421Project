@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24bfe8b-b685-49b4-bc2a-bdce7825bdbd" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$1.class" afterPath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$2.class" afterPath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel.class" afterPath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Nima.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Nima.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MontrealApparel.form" afterPath="$PROJECT_DIR$/src/MontrealApparel.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MontrealApparel.java" afterPath="$PROJECT_DIR$/src/MontrealApparel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -119,60 +123,74 @@
       <file leaf-file-name="MontrealApparel.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MontrealApparel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+            <state relative-caret-position="385">
+              <caret line="150" column="53" lean-forward="false" selection-start-line="150" selection-start-column="53" selection-end-line="150" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#onSearchClothes#0;class#MontrealApparel#0" expanded="false" />
+                <element signature="e#3616#3820#0" expanded="true" />
+                <element signature="e#3819#3820#0" expanded="true" />
+                <element signature="method#onSubmitClothSearch#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#onSelectAllTime#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#onSelectThisMonth#0;class#MontrealApparel#0" expanded="false" />
-                <element signature="method#onViewYourOrders#0;class#MontrealApparel#0" expanded="false" />
+                <element signature="method#onSubmitEid#0;class#MontrealApparel#0" expanded="false" />
+                <element signature="method#onLogin#0;class#MontrealApparel#0" expanded="false" />
+                <element signature="method#onCreateEmployeeRequest#0;class#MontrealApparel#0" expanded="false" />
+                <element signature="method#validatePassword#0;class#MontrealApparel#0" expanded="false" />
+                <element signature="method#MakeConnection#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#main#0;class#MontrealApparel#0" expanded="false" />
-                <marker date="1489632904858" expanded="true" signature="3044:3129" ph="SELECT CLOTH... " />
-                <marker date="1489632904858" expanded="true" signature="3044:3233" ph="SELECT CLOTH... CLOTHINGUNIT" />
-                <marker date="1489632904858" expanded="true" signature="3044:3288" ph="SELECT CLOTH... CLOTHINGUNIT" />
-                <marker date="1489632904858" expanded="true" signature="3044:3290" ph="SELECT CLOTH... CLOTHINGUNIT" />
-                <marker date="1489632904858" expanded="true" signature="3044:3291" ph="SELECT CLOTH... CLOTHINGUNIT" />
-                <marker date="1489632904858" expanded="true" signature="3044:3313" ph="SELECT CLOTH... CLOTHINGUNIT" />
-                <marker date="1489632904858" expanded="true" signature="3044:3317" ph="SELECT CLOTH... CLOTHINGUNIT" />
-                <marker date="1489632904858" expanded="true" signature="3044:3395" ph="SELECT CLOTH... CLOTHINGUNIT" />
-                <marker date="1489632904858" expanded="true" signature="3044:3510" ph="SELECT CLOTH... CLOTHINGUNIT" />
-                <marker date="1489632904858" expanded="true" signature="3044:3511" ph="SELECT CLOTH... CLOTHINGUNIT" />
-                <marker date="1489632904858" expanded="true" signature="3044:3581" ph="SELECT CLOTH... CLOTHINGUNIT" />
-                <marker date="1489632904858" expanded="true" signature="3044:3582" ph="SELECT CLOTH... CLOTHINGUNIT" />
-                <marker date="1489632904858" expanded="true" signature="3044:3706" ph="SELECT DISTI... CLOTHINGUNIT" />
-                <marker date="1489632904858" expanded="true" signature="9289:9336" ph="SELECT missi... missingValue" />
-                <marker date="1489632904858" expanded="true" signature="9289:9362" ph="SELECT missi... missingValue" />
-                <marker date="1489632904858" expanded="true" signature="9289:9363" ph="SELECT missi... missingValue" />
-                <marker date="1489632904858" expanded="true" signature="10420:10467" ph="SELECT missi... missingValue" />
-                <marker date="1489632904858" expanded="true" signature="10420:10480" ph="SELECT missi... missingValue" />
-                <marker date="1489632904858" expanded="true" signature="11401:11635" ph="SELECT COLOR... CLOTHINGUNIT" />
+                <element signature="method#isValidDateFormat#0;class#MontrealApparel#0" expanded="false" />
+                <element signature="method#SendStandardQuery#0;class#MontrealApparel#0" expanded="false" />
+                <element signature="method#SendStandardQuery#1;class#MontrealApparel#0" expanded="false" />
+                <element signature="method#QueryUnitColors#0;class#MontrealApparel#0" expanded="false" />
+                <element signature="method#getToday#0;class#MontrealApparel#0" expanded="false" />
+                <element signature="method#checkIfPurchase#0;class#MontrealApparel#0" expanded="false" />
+                <marker date="1489719862329" expanded="true" signature="5188:5249" ph="SELECT EMPLO... EMPLOYEE" />
+                <marker date="1489719862329" expanded="true" signature="5188:5250" ph="SELECT EMPLO... EMPLOYEE" />
+                <marker date="1489719862329" expanded="true" signature="5793:5956" ph="UPDATE ORDER... " />
+                <marker date="1489719862329" expanded="true" signature="7036:7072" ph="SELECT * FRO... ORDER" />
+                <marker date="1489719862329" expanded="true" signature="10717:10802" ph="SELECT CLOTH... " />
+                <marker date="1489719862329" expanded="true" signature="10717:10906" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489719862329" expanded="true" signature="10717:10961" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489719862329" expanded="true" signature="10717:10963" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489719862329" expanded="true" signature="10717:10964" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489719862329" expanded="true" signature="10717:10986" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489719862329" expanded="true" signature="10717:10990" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489719862329" expanded="true" signature="10717:11068" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489719862329" expanded="true" signature="10717:11183" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489719862329" expanded="true" signature="10717:11184" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489719862329" expanded="true" signature="10717:11254" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489719862329" expanded="true" signature="10717:11255" ph="SELECT CLOTH... CLOTHINGUNIT" />
+                <marker date="1489719862329" expanded="true" signature="10717:11379" ph="SELECT DISTI... CLOTHINGUNIT" />
+                <marker date="1489719862329" expanded="true" signature="17317:17469" ph="INSERT INTO EMPLOYEE... " />
+                <marker date="1489719862329" expanded="true" signature="17520:17614" ph="SELECT EID F... EMPLOYEE" />
+                <marker date="1489719862329" expanded="true" signature="19369:19410" ph="SELECT PASSW... EMPLOYEE" />
+                <marker date="1489719862329" expanded="true" signature="19369:19411" ph="SELECT PASSW... EMPLOYEE" />
+                <marker date="1489719862329" expanded="true" signature="23189:23236" ph="SELECT missi... missingValue" />
+                <marker date="1489719862329" expanded="true" signature="23189:23262" ph="SELECT missi... missingValue" />
+                <marker date="1489719862329" expanded="true" signature="23189:23263" ph="SELECT missi... missingValue" />
+                <marker date="1489719862329" expanded="true" signature="24320:24367" ph="SELECT missi... missingValue" />
+                <marker date="1489719862329" expanded="true" signature="24320:24380" ph="SELECT missi... missingValue" />
+                <marker date="1489719862329" expanded="true" signature="25265:25499" ph="SELECT COLOR... CLOTHINGUNIT" />
+                <marker date="1489719862329" expanded="true" signature="26781:26824" ph="SELECT ORDER... ORDER" />
+                <marker date="1489719862329" expanded="true" signature="26781:26825" ph="SELECT ORDER... ORDER" />
+                <marker date="1489719862329" expanded="true" signature="27602:27621" ph="SELECT * FRO... ORDER" />
+                <marker date="1489719862329" expanded="true" signature="27602:27638" ph="SELECT * FRO... ORDER" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77e48001-9ac8-477a-aa05-aac0e0ba2e1a/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
-              <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="CS421G42.ORDER" pinned="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/113d9036/77e48001-9ac8-477a-aa05-aac0e0ba2e1a/CS421G42.ORDER">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -185,6 +203,13 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>yyyy</find>
+      <find>onlogin</find>
+      <find>panel</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -549,7 +574,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -562,43 +587,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="COMP421Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="COMP421Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="COMP421Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="COMP421Project" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="MontrealApparel" />
-              <option name="myItemType" value="com.intellij.uiDesigner.projectView.FormNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -1044,6 +1033,7 @@
       <workItem from="1489613313490" duration="688000" />
       <workItem from="1489614035023" duration="145000" />
       <workItem from="1489614271249" duration="18595000" />
+      <workItem from="1489701631047" duration="16017000" />
     </task>
     <task id="LOCAL-00001" summary="Started working on the actual file and our GUI.&#10;Implemented one of the &quot;alternatives&quot; for Q2">
       <created>1489624326914</created>
@@ -1066,11 +1056,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489630187902</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Implemented employee login, as well as creating a new employee (INSERT function)">
+      <created>1489714458268</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1489714458268</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29171000" />
+    <option name="totallyTimeSpent" value="45188000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1086,35 +1083,35 @@
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.315625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33403805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33403805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5317125" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.315625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5317125" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1126,11 +1123,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Started working on the actual file and our GUI.&#10;Implemented one of the &quot;alternatives&quot; for Q2" />
     <MESSAGE value="Commenting code as well as implementing search on clothing units" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commenting code as well as implementing search on clothing units" />
+    <MESSAGE value="Implemented employee login, as well as creating a new employee (INSERT function)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented employee login, as well as creating a new employee (INSERT function)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MontrealApparel.java</url>
+          <line>255</line>
+          <properties />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1139,66 +1145,101 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
+    <entry file="file://$PROJECT_DIR$/src/MontrealApparel.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MontrealApparel.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1972">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3616#3820#0" expanded="true" />
+            <element signature="e#3819#3820#0" expanded="true" />
+            <element signature="method#onSubmitClothSearch#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSelectAllTime#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSelectThisMonth#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSubmitEid#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onLogin#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onCreateEmployeeRequest#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#validatePassword#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#MakeConnection#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#main#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#isValidDateFormat#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#SendStandardQuery#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#SendStandardQuery#1;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#QueryUnitColors#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#getToday#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#checkIfPurchase#0;class#MontrealApparel#0" expanded="false" />
+            <marker date="1489719862329" expanded="true" signature="5188:5249" ph="SELECT EMPLO... EMPLOYEE" />
+            <marker date="1489719862329" expanded="true" signature="5188:5250" ph="SELECT EMPLO... EMPLOYEE" />
+            <marker date="1489719862329" expanded="true" signature="5793:5956" ph="UPDATE ORDER... " />
+            <marker date="1489719862329" expanded="true" signature="7036:7072" ph="SELECT * FRO... ORDER" />
+            <marker date="1489719862329" expanded="true" signature="10717:10802" ph="SELECT CLOTH... " />
+            <marker date="1489719862329" expanded="true" signature="10717:10906" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:10961" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:10963" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:10964" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:10986" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:10990" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:11068" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:11183" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:11184" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:11254" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:11255" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:11379" ph="SELECT DISTI... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="17317:17469" ph="INSERT INTO EMPLOYEE... " />
+            <marker date="1489719862329" expanded="true" signature="17520:17614" ph="SELECT EID F... EMPLOYEE" />
+            <marker date="1489719862329" expanded="true" signature="19369:19410" ph="SELECT PASSW... EMPLOYEE" />
+            <marker date="1489719862329" expanded="true" signature="19369:19411" ph="SELECT PASSW... EMPLOYEE" />
+            <marker date="1489719862329" expanded="true" signature="23189:23236" ph="SELECT missi... missingValue" />
+            <marker date="1489719862329" expanded="true" signature="23189:23262" ph="SELECT missi... missingValue" />
+            <marker date="1489719862329" expanded="true" signature="23189:23263" ph="SELECT missi... missingValue" />
+            <marker date="1489719862329" expanded="true" signature="24320:24367" ph="SELECT missi... missingValue" />
+            <marker date="1489719862329" expanded="true" signature="24320:24380" ph="SELECT missi... missingValue" />
+            <marker date="1489719862329" expanded="true" signature="25265:25499" ph="SELECT COLOR... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="26781:26824" ph="SELECT ORDER... ORDER" />
+            <marker date="1489719862329" expanded="true" signature="26781:26825" ph="SELECT ORDER... ORDER" />
+            <marker date="1489719862329" expanded="true" signature="27602:27621" ph="SELECT * FRO... ORDER" />
+            <marker date="1489719862329" expanded="true" signature="27602:27638" ph="SELECT * FRO... ORDER" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77e48001-9ac8-477a-aa05-aac0e0ba2e1a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/113d9036/77e48001-9ac8-477a-aa05-aac0e0ba2e1a/CS421G42.ORDER">
+      <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/Test.java" />
+    <entry file="file://$PROJECT_DIR$/src/Test.java" />
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_112/src.zip!/java/awt/GridLayout.java" />
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_112/src.zip!/javax/swing/JFrame.java" />
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f4beafb5-9926-4cdc-a7ca-53dcbee6ceb2/console.sql" />
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f4beafb5-9926-4cdc-a7ca-53dcbee6ceb2/console.sql" />
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f4beafb5-9926-4cdc-a7ca-53dcbee6ceb2/console.sql" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f4beafb5-9926-4cdc-a7ca-53dcbee6ceb2/console.sql" />
     <entry file="jar://C:/Program Files (x86)/Java/jdk1.8.0_112/src.zip!/javax/swing/JFrame.java" />
@@ -1226,10 +1267,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="321" column="11" lean-forward="false" selection-start-line="321" selection-start-column="11" selection-end-line="321" selection-end-column="11" />
-          <folding>
-            <element signature="e#10946#10947#0" expanded="false" />
-            <element signature="e#11034#11035#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1241,19 +1278,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="99" column="8" lean-forward="true" selection-start-line="99" selection-start-column="8" selection-end-line="117" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Test.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/awt/event/WindowAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="66" column="16" lean-forward="false" selection-start-line="66" selection-start-column="16" selection-end-line="66" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1265,15 +1294,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/113d9036/77e48001-9ac8-477a-aa05-aac0e0ba2e1a/CS421G42.ORDER">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/awt/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="5619" column="29" lean-forward="false" selection-start-line="5619" selection-start-column="29" selection-end-line="5619" selection-end-column="29" />
           <folding />
         </state>
       </provider>
@@ -1286,49 +1310,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="dbDummy://dbtable:/113d9036/77e48001-9ac8-477a-aa05-aac0e0ba2e1a/CS421G42.ORDER">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MontrealApparel.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/awt/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="5619" column="29" lean-forward="false" selection-start-line="5619" selection-start-column="29" selection-end-line="5619" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MontrealApparel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state relative-caret-position="385">
+          <caret line="150" column="53" lean-forward="false" selection-start-line="150" selection-start-column="53" selection-end-line="150" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onSearchClothes#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="e#3616#3820#0" expanded="true" />
+            <element signature="e#3819#3820#0" expanded="true" />
+            <element signature="method#onSubmitClothSearch#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onSelectAllTime#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onSelectThisMonth#0;class#MontrealApparel#0" expanded="false" />
-            <element signature="method#onViewYourOrders#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSubmitEid#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onLogin#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onCreateEmployeeRequest#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#validatePassword#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#MakeConnection#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#main#0;class#MontrealApparel#0" expanded="false" />
-            <marker date="1489632904858" expanded="true" signature="3044:3129" ph="SELECT CLOTH... " />
-            <marker date="1489632904858" expanded="true" signature="3044:3233" ph="SELECT CLOTH... CLOTHINGUNIT" />
-            <marker date="1489632904858" expanded="true" signature="3044:3288" ph="SELECT CLOTH... CLOTHINGUNIT" />
-            <marker date="1489632904858" expanded="true" signature="3044:3290" ph="SELECT CLOTH... CLOTHINGUNIT" />
-            <marker date="1489632904858" expanded="true" signature="3044:3291" ph="SELECT CLOTH... CLOTHINGUNIT" />
-            <marker date="1489632904858" expanded="true" signature="3044:3313" ph="SELECT CLOTH... CLOTHINGUNIT" />
-            <marker date="1489632904858" expanded="true" signature="3044:3317" ph="SELECT CLOTH... CLOTHINGUNIT" />
-            <marker date="1489632904858" expanded="true" signature="3044:3395" ph="SELECT CLOTH... CLOTHINGUNIT" />
-            <marker date="1489632904858" expanded="true" signature="3044:3510" ph="SELECT CLOTH... CLOTHINGUNIT" />
-            <marker date="1489632904858" expanded="true" signature="3044:3511" ph="SELECT CLOTH... CLOTHINGUNIT" />
-            <marker date="1489632904858" expanded="true" signature="3044:3581" ph="SELECT CLOTH... CLOTHINGUNIT" />
-            <marker date="1489632904858" expanded="true" signature="3044:3582" ph="SELECT CLOTH... CLOTHINGUNIT" />
-            <marker date="1489632904858" expanded="true" signature="3044:3706" ph="SELECT DISTI... CLOTHINGUNIT" />
-            <marker date="1489632904858" expanded="true" signature="9289:9336" ph="SELECT missi... missingValue" />
-            <marker date="1489632904858" expanded="true" signature="9289:9362" ph="SELECT missi... missingValue" />
-            <marker date="1489632904858" expanded="true" signature="9289:9363" ph="SELECT missi... missingValue" />
-            <marker date="1489632904858" expanded="true" signature="10420:10467" ph="SELECT missi... missingValue" />
-            <marker date="1489632904858" expanded="true" signature="10420:10480" ph="SELECT missi... missingValue" />
-            <marker date="1489632904858" expanded="true" signature="11401:11635" ph="SELECT COLOR... CLOTHINGUNIT" />
+            <element signature="method#isValidDateFormat#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#SendStandardQuery#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#SendStandardQuery#1;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#QueryUnitColors#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#getToday#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#checkIfPurchase#0;class#MontrealApparel#0" expanded="false" />
+            <marker date="1489719862329" expanded="true" signature="5188:5249" ph="SELECT EMPLO... EMPLOYEE" />
+            <marker date="1489719862329" expanded="true" signature="5188:5250" ph="SELECT EMPLO... EMPLOYEE" />
+            <marker date="1489719862329" expanded="true" signature="5793:5956" ph="UPDATE ORDER... " />
+            <marker date="1489719862329" expanded="true" signature="7036:7072" ph="SELECT * FRO... ORDER" />
+            <marker date="1489719862329" expanded="true" signature="10717:10802" ph="SELECT CLOTH... " />
+            <marker date="1489719862329" expanded="true" signature="10717:10906" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:10961" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:10963" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:10964" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:10986" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:10990" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:11068" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:11183" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:11184" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:11254" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:11255" ph="SELECT CLOTH... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="10717:11379" ph="SELECT DISTI... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="17317:17469" ph="INSERT INTO EMPLOYEE... " />
+            <marker date="1489719862329" expanded="true" signature="17520:17614" ph="SELECT EID F... EMPLOYEE" />
+            <marker date="1489719862329" expanded="true" signature="19369:19410" ph="SELECT PASSW... EMPLOYEE" />
+            <marker date="1489719862329" expanded="true" signature="19369:19411" ph="SELECT PASSW... EMPLOYEE" />
+            <marker date="1489719862329" expanded="true" signature="23189:23236" ph="SELECT missi... missingValue" />
+            <marker date="1489719862329" expanded="true" signature="23189:23262" ph="SELECT missi... missingValue" />
+            <marker date="1489719862329" expanded="true" signature="23189:23263" ph="SELECT missi... missingValue" />
+            <marker date="1489719862329" expanded="true" signature="24320:24367" ph="SELECT missi... missingValue" />
+            <marker date="1489719862329" expanded="true" signature="24320:24380" ph="SELECT missi... missingValue" />
+            <marker date="1489719862329" expanded="true" signature="25265:25499" ph="SELECT COLOR... CLOTHINGUNIT" />
+            <marker date="1489719862329" expanded="true" signature="26781:26824" ph="SELECT ORDER... ORDER" />
+            <marker date="1489719862329" expanded="true" signature="26781:26825" ph="SELECT ORDER... ORDER" />
+            <marker date="1489719862329" expanded="true" signature="27602:27621" ph="SELECT * FRO... ORDER" />
+            <marker date="1489719862329" expanded="true" signature="27602:27638" ph="SELECT * FRO... ORDER" />
           </folding>
         </state>
       </provider>
