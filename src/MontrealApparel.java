@@ -1,3 +1,4 @@
+import java.text.ParseException;
 import java.util.ArrayList;
 import javax.swing.*;
 import java.awt.event.KeyAdapter;
@@ -25,6 +26,21 @@ public class MontrealApparel extends JDialog {
     private JTextField clothModelNameTextField;
     private JComboBox colorDropDown;
     private JButton submitClothButton;
+    private JButton employeeLoginButton;
+    private JPanel loginPane;
+    private JTextField usernameField;
+    private JPasswordField passwordField;
+    private JButton loginButton;
+    private JButton createEmployeeButton;
+    private JPanel createEmployeePane;
+    private JTextField newPasswordField;
+    private JTextField newEmploymentDateField;
+    private JTextField newENameField;
+    private JTextField newSalaryField;
+    private JLabel newENameLabel;
+    private JLabel newEmploymentDateLabel;
+    private JLabel newSalaryLabel;
+    private JLabel newPasswordLabel;
 
     private MontrealApparel() throws SQLException{
         setSize(1280,720);
@@ -53,8 +69,32 @@ public class MontrealApparel extends JDialog {
                 }
             }
         });
+        passwordField.addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    onLogin();
+                }
+            }
+        });
+        usernameField.addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    onLogin();
+                }
+            }
+        });
+        newPasswordField.addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    onCreateEmployeeRequest();
+                }
+            }
+        });
         searchClothesButton.addActionListener(e -> onSearchClothes());
         submitClothButton.addActionListener(e -> onSubmitClothSearch());
+        employeeLoginButton.addActionListener(e -> onEmployeeLogin());
+        loginButton.addActionListener(e -> onLogin());
+        createEmployeeButton.addActionListener(e -> onCreateEmployeeRequest());
         // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         addWindowListener(new WindowAdapter() {
@@ -63,11 +103,13 @@ public class MontrealApparel extends JDialog {
             }
         });
 
-        // call onCancel() on ESCAPE
+        // call onCancel() on ESCAPE key pressed
         contentPane.registerKeyboardAction(e -> onCancel(), KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
-    /* METHODS TRIGGERED ON BUTTON CLICKS */
+    /* ##########################################
+     * #   METHODS TRIGGERED ON BUTTON CLICKS   #
+     * ########################################## */
     private void onSubmitClothSearch() {
         String color = colorDropDown.getSelectedItem().toString();
         String modelName = clothModelNameTextField.getText().toString();
@@ -101,6 +143,7 @@ public class MontrealApparel extends JDialog {
     private void onSearchClothes() {
         searchClothesPanel.setVisible(true);
         eidPanel.setVisible(false);
+        loginPane.setVisible(false);
     }
 
     private void onSelectAllTime() {
@@ -157,12 +200,134 @@ public class MontrealApparel extends JDialog {
     private void onViewYourOrders() {
         eidPanel.setVisible(true);
         searchClothesPanel.setVisible(false);
+        loginPane.setVisible(false);
     }
 
     private void onCancel() {
         dispose();
     }
 
+    private void onEmployeeLogin() {
+        loginPane.setVisible(true);
+        searchClothesPanel.setVisible(false);
+        eidPanel.setVisible(false);
+    }
+
+    private void onLogin() {
+        String uname = usernameField.getText();
+        char[] pwd = passwordField.getPassword();
+        if (uname.length() == 0 || pwd.length == 0) {
+            outputPane.setText("Please enter a valid username and password!");
+            return;
+        }
+        if (validatePassword(uname, pwd)) {
+            outputPane.setText("Login successful!");
+            createEmployeeButton.setVisible(true);
+            createEmployeePane.setVisible(true);
+            searchClothesButton.setVisible(true);
+            viewYourOrdersButton.setVisible(true);
+        }
+    }
+
+    private void onCreateEmployeeRequest() {
+        String newEName = newENameField.getText();
+        if (newEName.length() > 20) {
+            outputPane.setText("Employee name can only be upto 20 characters. Please try again.");
+            return;
+        }
+        if (newEName.length() == 0) {
+            outputPane.setText("Please enter an employee name!");
+            return;
+        }
+        String newEDate = newEmploymentDateField.getText();
+        if (!isValidDateFormat("yyyy-MM-dd", newEDate)) {
+            outputPane.setText("Invalid date format! Try again with YYYY-MM-DD");
+            return;
+        }
+        String newSalary = newSalaryField.getText();
+        if (newSalary.length() == 0) {
+            outputPane.setText("Please enter an employee salary!");
+            return;
+        }
+        String newPassword = newPasswordField.getText();
+        if (newPassword.length() > 25 || newPassword.length() < 8) {
+            outputPane.setText("Password should be between 8 and 25 characters long. Please try again.");
+            return;
+        }
+        // If all info entered is correct then we can send the query to the database!
+        try {
+            Statement s = MakeConnection();
+            try {
+                s.executeUpdate("INSERT INTO EMPLOYEE (ENAME, EMPLOYMENTDATE, SALARY, PASSWORD) VALUES ('" + newEName + "', '" + newEDate + "', " + newSalary + ", '" + newPassword + "')");
+                ResultSet rs = s.executeQuery("SELECT EID FROM EMPLOYEE WHERE ENAME = '" + newEName + "' AND PASSWORD = '" + newPassword + "'");
+                while (rs.next()) {
+                    String newEID = rs.getString(1);
+                    outputPane.setText("New employee created with EID: " + newEID +
+                            "\nEmployee Name: " + newEName +
+                            "\nEmployment Date: " + newEDate +
+                            "\nSalary: " + newSalary +
+                            "\nPassword: " + newPassword);
+                    newENameField.setText("");
+                    newEmploymentDateField.setText("");
+                    newSalaryField.setText("");
+                    newPasswordField.setText("");
+
+                }
+            } catch (SQLDataException e){
+                outputPane.setText("Invalid data entered. Please try again!");
+                return;
+            }
+        } catch (SQLException e) {
+            int code = e.getErrorCode();
+            String state = e.getSQLState();
+            System.out.println("CODE: " + code + " STATE: " + state);
+            outputPane.setText("Connection failed! Try again");
+            return;
+        }
+    }
+
+    /* ####################################
+    *  #         HELPER METHODS           #
+    *  #################################### */
+    /**
+     * Authenticates password with database to check if the correct password was given for the employee requested
+     * @param uname         The EID which is used as an identifier for the employee
+     * @param pwd           The provided password for the employee
+     * @return              Result of authentication. True = successful, False = Failed
+     */
+    private boolean validatePassword(String uname, char[] pwd) {
+        try {
+            Statement s = MakeConnection();
+            ResultSet rs = s.executeQuery("SELECT PASSWORD FROM EMPLOYEE WHERE EID = " + uname);
+            if (rs.next()) {
+                char[] correctpwd = rs.getString(1).toCharArray();
+                if (correctpwd.length == 0 || pwd.length != correctpwd.length) {
+                    outputPane.setText("Invalid username or password. Try again");
+                    return false;
+                } else {
+                    for (int i = 0; i < correctpwd.length; i++) {
+                        if (correctpwd[i] != pwd[i]) {
+                            outputPane.setText("Invalid password entered! Try again.");
+                            return false;
+                        }
+                    }
+                    return true;
+                }
+            } else {
+                outputPane.setText("Employee not found!");
+                return false;
+            }
+        } catch (SQLException e) {
+            outputPane.setText("Connection to database failed!");
+            return false;
+        }
+    }
+
+    /**
+     * Attempts to connect to the database
+     * @return        A statement that can be used to transfer queries/updates/etc to the database
+     * @throws SQLException
+     */
     private Statement MakeConnection() throws SQLException{
         String url = "jdbc:db2://comp421.cs.mcgill.ca:50000/cs421";
         Connection con = DriverManager.getConnection(url, "CS421G42", "cashMeOutside420");
@@ -188,6 +353,26 @@ public class MontrealApparel extends JDialog {
         statement.close();
         con.close();
         System.exit(0);
+    }
+
+    /**
+     * Checks for valid date format
+     * @param format    Date format to check for
+     * @param value     Date value to check
+     * @return          Result of value format being the given format to check
+     */
+    private static boolean isValidDateFormat(String format, String value) {
+        Date date = null;
+        try {
+            SimpleDateFormat sdf = new SimpleDateFormat(format);
+            date = sdf.parse(value);
+            if (!value.equals(sdf.format(date))) {
+                date = null;
+            }
+        } catch (ParseException e) {
+            System.out.println("Parse error");
+        }
+        return date != null;
     }
 
     /* #######################################
