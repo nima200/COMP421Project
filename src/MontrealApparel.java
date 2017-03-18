@@ -43,6 +43,18 @@ public class MontrealApparel extends JDialog {
     private JButton viewCardInfoButton;
     private JButton refundOrderButton;
     private JButton modifyOrderButton;
+    private JButton requestRestockButton;
+    private JTextField restockModelNameField;
+    private JSpinner restockQuantitySpinner;
+    private JComboBox restockColorDropdown;
+    private JButton restockRequestsButton;
+    private JTextField sizeField;
+    private JTextField restockSizeField;
+    private JButton submitRestockButton;
+    private JButton submitRestockRequestButton;
+    private JLabel restockSizeLabel;
+    private JButton restockingButton;
+    private JPanel restockPanel;
     private String currentEmployee;
 
     private MontrealApparel() throws SQLException{
@@ -60,7 +72,14 @@ public class MontrealApparel extends JDialog {
         clothModelNameTextField.addKeyListener(new KeyAdapter() {
             public void keyPressed(KeyEvent e) {
                 if (e.getKeyCode() == KeyEvent.VK_ENTER) {
-                    QueryUnitColors(clothModelNameTextField.getText());
+                    QueryUnitColors(clothModelNameTextField.getText(), colorDropDown);
+                }
+            }
+        });
+        restockModelNameField.addKeyListener(new KeyAdapter() {
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    QueryUnitColors(restockModelNameField.getText(), restockColorDropdown);
                 }
             }
         });
@@ -101,6 +120,12 @@ public class MontrealApparel extends JDialog {
         refundOrderButton.addActionListener(e -> onRefundOrder());
         modifyOrderButton.addActionListener(e -> onModifyOrder());
         viewCardInfoButton.addActionListener(e -> onViewCardInfo());
+        submitRestockRequestButton.addActionListener(e -> onSubmitRestockRequest());
+        restockRequestsButton.addActionListener(e -> onViewRestockRequests());
+        submitRestockButton.addActionListener(e -> onRestockSubmit());
+        requestRestockButton.addActionListener(e -> onRequestRestock());
+        restockingButton.addActionListener(e -> onRestockingButton());
+
         // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
         addWindowListener(new WindowAdapter() {
@@ -113,9 +138,106 @@ public class MontrealApparel extends JDialog {
         contentPane.registerKeyboardAction(e -> onCancel(), KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
+    private void onRestockingButton() {
+        restockPanel.setVisible(true);
+        changeOrderPanel.setVisible(false);
+        searchClothesPanel.setVisible(false);
+        eidPanel.setVisible(false);
+        loginPanel.setVisible(false);
+    }
+
+    private void onRequestRestock() {
+        restockSizeLabel.setVisible(true);
+        sizeField.setVisible(true);
+        submitRestockRequestButton.setVisible(true);
+    }
+
+    private void onViewRestockRequests() {
+        try {
+            Statement s = MakeConnection();
+            Statement s2 = MakeConnection();
+            ResultSet rs_1 = s.executeQuery("SELECT * FROM RESTOCKREQUEST");
+            outputPane.setText("");
+            while (rs_1.next()) {
+                String modelName = rs_1.getString(1);
+                String color = rs_1.getString(2);
+                String size = rs_1.getString(3);
+                String requester = rs_1.getString(4);
+                ResultSet rs = s2.executeQuery("SELECT ENAME FROM EMPLOYEE WHERE EID = " + requester);
+                if (rs.next()) {
+                    String requesterName = rs.getString(1);
+                    outputPane.setText(outputPane.getText() + "\n" +
+                            "Requested by: " + requester + ", " + requesterName + "\n" +
+                            "Requested Model Name: " + modelName + "\n" +
+                            "Requested Color: " + color + "\n" +
+                            "Requested Size: " + size + " \n");
+                }
+            }
+        } catch (SQLException e) {
+            int code = e.getErrorCode();
+            String state = e.getSQLState();
+            System.out.println("CODE: " + code + " STATE: " + state);
+            outputPane.setText("Connection Failed!");
+        }
+    }
+
+    private void onRestockSubmit() {
+        try {
+            Statement s = MakeConnection();
+            String eid = usernameField.getText();
+            String modelName = restockModelNameField.getText();
+            String color = restockColorDropdown.getSelectedItem().toString();
+            String size = restockSizeField.getText();
+            String quantityRestocked = restockQuantitySpinner.getValue().toString();
+            if (eid.length() == 0 || modelName.length() == 0 || color.length() == 0 || size.length() == 0) {
+                outputPane.setText("None of the fields can be left empty! Please try again.");
+                return;
+            }
+            s.executeUpdate("UPDATE UNITSTOCKING " +
+                    "SET QUANTITYAVAILABLE = QUANTITYAVAILABLE +" + quantityRestocked + " " +
+                    "WHERE MODELNAME = '" + modelName + "' AND COLOR = '" + color + "' AND SIZE = '" + size + "'");
+            s.executeUpdate("DELETE FROM RESTOCKREQUEST WHERE MODELNAME = '" + modelName+ "' AND SIZE = '" + size + "' AND COLOR = '" + color + "'");
+            outputPane.setText("Stock updated for : \n" +
+                    "Clothing Model: " + modelName + "\n" +
+                    "Size: " + size + "\n" +
+                    "Color: " + color + "\n" +
+                    "Restock request deleted.");
+        } catch (SQLException e) {
+            outputPane.setText("Connection Failed!");
+        }
+    }
     /* ##########################################
      * #   METHODS TRIGGERED ON BUTTON CLICKS   #
      * ########################################## */
+
+    private void onSubmitRestockRequest() {
+        try {
+            String eid = usernameField.getText();
+            if (eid.length() == 0) {
+                outputPane.setText("Your EID is invalid!");
+                return;
+            }
+            String modelName = clothModelNameTextField.getText();
+            if (modelName.length() == 0) {
+                outputPane.setText("The model name cannot be empty!");
+                return;
+            }
+            String color = colorDropDown.getSelectedItem().toString();
+            String size = sizeField.getText();
+            if (size.length() == 0) {
+                outputPane.setText("Size cannot be left empty!");
+            }
+            Statement s = MakeConnection();
+            s.executeUpdate("INSERT INTO RESTOCKREQUEST (MODELNAME, COLOR, SIZE, EID) VALUES ('" + modelName + "', '" + color + "', '" + size + "', " + eid + ")");
+            outputPane.setText("Restock requested for: \n" +
+                    "Model: " + modelName + "\n" +
+                    "Color: " + color + "\n" +
+                    "Size: " + size + "\n");
+        } catch (SQLException e) {
+            outputPane.setText("Connection failed!");
+        }
+    }
+
     private void onViewCardInfo() {
         String oid = (orderIDField.getText().length() > 0) ? orderIDField.getText() : "";
         if (oid.length() == 0) {
@@ -143,6 +265,7 @@ public class MontrealApparel extends JDialog {
     }
 
     private void onModifyOrder() {
+        restockPanel.setVisible(false);
         eidPanel.setVisible(false);
         changeOrderPanel.setVisible(true);
         loginPanel.setVisible(false);
@@ -257,8 +380,7 @@ public class MontrealApparel extends JDialog {
                 String col = rs.getString(2);
                 String restockDate = rs.getString(3);
                 String qAvail = rs.getString(4);
-                outputPane.setText(outputPane.getText() +
-                                    "Model Name: " + mname + "\n" +
+                outputPane.setText("Model Name: " + mname + "\n" +
                                     "Color: " + col + "\n" +
                                     "Restock Date: " + restockDate + "\n" +
                                     "Quantity Available: " + qAvail + "\n" +
@@ -270,6 +392,7 @@ public class MontrealApparel extends JDialog {
     }
 
     private void onSearchClothes() {
+        restockPanel.setVisible(false);
         searchClothesPanel.setVisible(true);
         changeOrderPanel.setVisible(false);
         eidPanel.setVisible(false);
@@ -332,10 +455,11 @@ public class MontrealApparel extends JDialog {
     }
 
     private void onViewYourOrders() {
-        eidPanel.setVisible(true);
         searchClothesPanel.setVisible(false);
         changeOrderPanel.setVisible(false);
+        eidPanel.setVisible(true);
         loginPanel.setVisible(false);
+        restockPanel.setVisible(false);
     }
 
     private void onCancel() {
@@ -344,6 +468,7 @@ public class MontrealApparel extends JDialog {
 
     private void onEmployeeLogin() {
         loginPanel.setVisible(true);
+        restockPanel.setVisible(false);
         changeOrderPanel.setVisible(false);
         searchClothesPanel.setVisible(false);
         eidPanel.setVisible(false);
@@ -364,6 +489,7 @@ public class MontrealApparel extends JDialog {
             createEmployeePanel.setVisible(true);
             searchClothesButton.setVisible(true);
             viewYourOrdersButton.setVisible(true);
+            restockingButton.setVisible(true);
         }
     }
 
@@ -566,7 +692,7 @@ public class MontrealApparel extends JDialog {
      * the model name to be what was given as a parameter.
      * @param clothingUnitName      The name of the clothing unit to find colors for.
      */
-    private void QueryUnitColors(String clothingUnitName) {
+    private void QueryUnitColors(String clothingUnitName, JComboBox jComboBox) {
         try {
             Statement s = MakeConnection();
             try {
@@ -577,7 +703,7 @@ public class MontrealApparel extends JDialog {
                 while(resultSet.next()) {
                     colors.add(resultSet.getString(1));
                 }
-                colorDropDown.setModel(new DefaultComboBoxModel(colors.toArray()));
+                jComboBox.setModel(new DefaultComboBoxModel(colors.toArray()));
             } catch (SQLException e1) {
                 outputPane.setText(clothModelNameTextField.getText() + " was not a valid search term!" +
                         "\n Perhaps it is not found in the database.");

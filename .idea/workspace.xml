@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a24bfe8b-b685-49b4-bc2a-bdce7825bdbd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/77e48001-9ac8-477a-aa05-aac0e0ba2e1a/_src_/schema/CS421G42.zip" afterPath="$PROJECT_DIR$/.idea/dataSources/77e48001-9ac8-477a-aa05-aac0e0ba2e1a/_src_/schema/CS421G42.zip" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$1.class" afterPath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$2.class" afterPath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$2.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$3.class" afterPath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$3.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$4.class" afterPath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$5.class" afterPath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$5.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$6.class" afterPath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel$6.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel.class" afterPath="$PROJECT_DIR$/out/production/Project 3 COMP 421/MontrealApparel.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/77e48001-9ac8-477a-aa05-aac0e0ba2e1a.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/77e48001-9ac8-477a-aa05-aac0e0ba2e1a.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MontrealApparel.form" afterPath="$PROJECT_DIR$/src/MontrealApparel.form" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MontrealApparel.java" afterPath="$PROJECT_DIR$/src/MontrealApparel.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -79,6 +90,24 @@
         <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
       </PATH_ELEMENT>
       <PATH_ELEMENT>
+        <option name="myItemId" value="RESTOCKREQUEST" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="cs421@comp421.cs.mcgill.ca" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$GroupNode" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
         <option name="myItemId" value="CLOTHINGUNIT" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
@@ -108,21 +137,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MontrealApparel.form" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MontrealApparel.form" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MontrealApparel.form">
           <provider selected="true" editor-type-id="ui-designer">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MontrealApparel.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MontrealApparel.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MontrealApparel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="128" column="35" lean-forward="true" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
+            <state relative-caret-position="309">
+              <caret line="470" column="37" lean-forward="false" selection-start-line="470" selection-start-column="37" selection-end-line="470" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#onModifyOrder#0;class#MontrealApparel#0" expanded="false" />
+                <element signature="method#onRequestRestock#0;class#MontrealApparel#0" expanded="false" />
+                <element signature="method#onViewRestockRequests#0;class#MontrealApparel#0" expanded="false" />
+                <element signature="method#onRestockSubmit#0;class#MontrealApparel#0" expanded="false" />
+                <element signature="method#onViewCardInfo#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#onRefundOrder#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#onSearchOrder#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#onSubmitClothSearch#0;class#MontrealApparel#0" expanded="false" />
@@ -131,33 +163,74 @@
                 <element signature="method#onSelectThisMonth#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#onSubmitEid#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#onViewYourOrders#0;class#MontrealApparel#0" expanded="false" />
-                <element signature="method#onEmployeeLogin#0;class#MontrealApparel#0" expanded="false" />
-                <element signature="method#onLogin#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#onCreateEmployeeRequest#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#validatePassword#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#MakeConnection#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#isValidDateFormat#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#SendStandardQuery#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#SendStandardQuery#1;class#MontrealApparel#0" expanded="false" />
-                <element signature="method#QueryUnitColors#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#getToday#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#checkIfPurchase#0;class#MontrealApparel#0" expanded="false" />
                 <element signature="method#checkIfOrderValid#0;class#MontrealApparel#0" expanded="false" />
-                <marker date="1489760862580" expanded="true" signature="5135:5252" ph="SELECT * FRO... CARTDETAILS" />
-                <marker date="1489760862580" expanded="true" signature="5135:5253" ph="SELECT MODEL... CARTDETAILS" />
-                <marker date="1489760862580" expanded="true" signature="6515:6577" ph="SELECT EMPLO... EMPLOYEE" />
-                <marker date="1489760862580" expanded="true" signature="7120:7283" ph="UPDATE ORDER... " />
-                <marker date="1489760862580" expanded="true" signature="8307:8343" ph="SELECT * FRO... ORDER" />
-                <marker date="1489760862580" expanded="true" signature="11824:12486" ph="SELECT DISTI... CLOTHINGUNIT" />
-                <marker date="1489760862580" expanded="true" signature="18628:18780" ph="INSERT INTO EMPLOYEE... " />
-                <marker date="1489760862580" expanded="true" signature="18831:18925" ph="SELECT EID F... EMPLOYEE" />
-                <marker date="1489760862580" expanded="true" signature="20680:20722" ph="SELECT PASSW... EMPLOYEE" />
-                <marker date="1489760862580" expanded="true" signature="24580:24654" ph="SELECT missi... missingValue" />
-                <marker date="1489760862580" expanded="true" signature="25711:25758" ph="SELECT missi... missingValue" />
-                <marker date="1489760862580" expanded="true" signature="26656:26890" ph="SELECT COLOR... CLOTHINGUNIT" />
-                <marker date="1489760862580" expanded="true" signature="28142:28186" ph="SELECT ORDER... ORDER" />
-                <marker date="1489760862580" expanded="true" signature="28850:28886" ph="SELECT * FRO... ORDER" />
+                <marker date="1489798940118" expanded="true" signature="6440:6468" ph="SELECT * FRO... RESTOCKREQUEST" />
+                <marker date="1489798940118" expanded="true" signature="6797:6835" ph="SELECT ENAME... EMPLOYEE" />
+                <marker date="1489798940118" expanded="true" signature="6797:6836" ph="SELECT ENAME... EMPLOYEE" />
+                <marker date="1489798940118" expanded="true" signature="8296:8303" ph="UPDATE CLOTH... " />
+                <marker date="1489798940118" expanded="true" signature="8296:8384" ph="UPDATE UNITS... " />
+                <marker date="1489798940118" expanded="true" signature="8296:8440" ph="UPDATE UNITS... " />
+                <marker date="1489798940118" expanded="true" signature="8296:8452" ph="UPDATE UNITS... " />
+                <marker date="1489798940118" expanded="true" signature="8296:8484" ph="UPDATE UNITS... " />
+                <marker date="1489798940118" expanded="true" signature="8296:8485" ph="UPDATE UNITS... " />
+                <marker date="1489798940118" expanded="true" signature="8296:8511" ph="UPDATE UNITS... " />
+                <marker date="1489798940118" expanded="true" signature="8296:8512" ph="UPDATE UNITS... " />
+                <marker date="1489798940118" expanded="true" signature="8296:8513" ph="UPDATE UNITS... " />
+                <marker date="1489798940118" expanded="true" signature="8296:8526" ph="UPDATE UNITS... " />
+                <marker date="1489798940118" expanded="true" signature="8559:8585" ph="DELETE FROM " />
+                <marker date="1489798940118" expanded="true" signature="8559:8633" ph="DELETE FROM " />
+                <marker date="1489798940118" expanded="true" signature="8559:8634" ph="DELETE FROM " />
+                <marker date="1489798940118" expanded="true" signature="8559:8660" ph="DELETE FROM " />
+                <marker date="1489798940118" expanded="true" signature="8559:8661" ph="DELETE FROM " />
+                <marker date="1489798940118" expanded="true" signature="8559:8672" ph="DELETE FROM " />
+                <marker date="1489798940118" expanded="true" signature="8559:8676" ph="DELETE FROM " />
+                <marker date="1489798940118" expanded="false" signature="9240:10411" ph="{...}" />
+                <marker date="1489798940118" expanded="true" signature="9968:10034" ph="INSERT INTO RESTOCKREQUEST... " />
+                <marker date="1489798940118" expanded="true" signature="9968:10050" ph="INSERT INTO RESTOCKREQUEST... " />
+                <marker date="1489798940118" expanded="true" signature="9968:10053" ph="INSERT INTO RESTOCKREQUEST... " />
+                <marker date="1489798940118" expanded="true" signature="9968:10055" ph="INSERT INTO RESTOCKREQUEST... " />
+                <marker date="1489798940118" expanded="true" signature="9968:10072" ph="INSERT INTO RESTOCKREQUEST... " />
+                <marker date="1489798940118" expanded="true" signature="9968:10085" ph="INSERT INTO RESTOCKREQUEST... " />
+                <marker date="1489798940118" expanded="true" signature="9968:10087" ph="INSERT INTO RESTOCKREQUEST... " />
+                <marker date="1489798940118" expanded="true" signature="9968:10099" ph="INSERT INTO RESTOCKREQUEST... " />
+                <marker date="1489798940118" expanded="true" signature="9968:10101" ph="INSERT INTO RESTOCKREQUEST... " />
+                <marker date="1489798940118" expanded="true" signature="10768:10886" ph="SELECT MODEL... CARTDETAILS" />
+                <marker date="1489798940118" expanded="true" signature="12188:12250" ph="SELECT EMPLO... EMPLOYEE" />
+                <marker date="1489798940118" expanded="true" signature="12793:12956" ph="UPDATE ORDER... " />
+                <marker date="1489798940118" expanded="true" signature="13980:14016" ph="SELECT * FRO... ORDER" />
+                <marker date="1489798940118" expanded="true" signature="17497:18159" ph="SELECT DISTI... CLOTHINGUNIT" />
+                <marker date="1489798940118" expanded="true" signature="24409:24561" ph="INSERT INTO EMPLOYEE... " />
+                <marker date="1489798940118" expanded="true" signature="24612:24706" ph="SELECT EID F... EMPLOYEE" />
+                <marker date="1489798940118" expanded="true" signature="26461:26503" ph="SELECT PASSW... EMPLOYEE" />
+                <marker date="1489798940118" expanded="true" signature="30361:30435" ph="SELECT missi... missingValue" />
+                <marker date="1489798940118" expanded="true" signature="31492:31539" ph="SELECT missi... missingValue" />
+                <marker date="1489798940118" expanded="true" signature="32458:32692" ph="SELECT COLOR... CLOTHINGUNIT" />
+                <marker date="1489798940118" expanded="true" signature="33940:33984" ph="SELECT ORDER... ORDER" />
+                <marker date="1489798940118" expanded="true" signature="34648:34684" ph="SELECT * FRO... ORDER" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CS421G42.RESTOCKREQUEST" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/113d9036/77e48001-9ac8-477a-aa05-aac0e0ba2e1a/CS421G42.RESTOCKREQUEST">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -176,6 +249,8 @@
       <find>yyyy</find>
       <find>onlogin</find>
       <find>panel</find>
+      <find>INSERT</find>
+      <find>UPDATE</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -191,8 +266,8 @@
       <list>
         <option value="$PROJECT_DIR$/src/Test.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/77e48001-9ac8-477a-aa05-aac0e0ba2e1a/console.sql" />
-        <option value="$PROJECT_DIR$/src/MontrealApparel.form" />
         <option value="$PROJECT_DIR$/src/MontrealApparel.java" />
+        <option value="$PROJECT_DIR$/src/MontrealApparel.form" />
       </list>
     </option>
   </component>
@@ -205,8 +280,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1000" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -533,7 +608,7 @@
         </expanded-state>
         <selected-state>
           <State>
-            <id>Android</id>
+            <id>Duplicates</id>
           </State>
         </selected-state>
       </profile-state>
@@ -541,7 +616,7 @@
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -554,12 +629,7 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scratches" />
-      <pane id="ProjectPane" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -1008,6 +1078,8 @@
       <workItem from="1489701631047" duration="16057000" />
       <workItem from="1489756429104" duration="166000" />
       <workItem from="1489756614656" duration="3060000" />
+      <workItem from="1489788643234" duration="387000" />
+      <workItem from="1489792942583" duration="6207000" />
     </task>
     <task id="LOCAL-00001" summary="Started working on the actual file and our GUI.&#10;Implemented one of the &quot;alternatives&quot; for Q2">
       <created>1489624326914</created>
@@ -1048,7 +1120,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48454000" />
+    <option name="totallyTimeSpent" value="55048000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1060,27 +1132,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32809773" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32769555" sideWeight="0.49791667" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.50208336" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5516854" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24841438" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25475687" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11510417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.315625" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21458334" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1092,7 +1164,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5317125" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1110,7 +1182,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MontrealApparel.java</url>
+          <line>395</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="15" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1126,11 +1206,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MontrealApparel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="3712">
+          <caret line="128" column="35" lean-forward="false" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onModifyOrder#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onRequestRestock#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onViewRestockRequests#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onRestockSubmit#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onViewCardInfo#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onRefundOrder#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onSearchOrder#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onSubmitClothSearch#0;class#MontrealApparel#0" expanded="false" />
@@ -1139,32 +1222,58 @@
             <element signature="method#onSelectThisMonth#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onSubmitEid#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onViewYourOrders#0;class#MontrealApparel#0" expanded="false" />
-            <element signature="method#onEmployeeLogin#0;class#MontrealApparel#0" expanded="false" />
-            <element signature="method#onLogin#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onCreateEmployeeRequest#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#validatePassword#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#MakeConnection#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#isValidDateFormat#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#SendStandardQuery#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#SendStandardQuery#1;class#MontrealApparel#0" expanded="false" />
-            <element signature="method#QueryUnitColors#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#getToday#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#checkIfPurchase#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#checkIfOrderValid#0;class#MontrealApparel#0" expanded="false" />
-            <marker date="1489760862580" expanded="true" signature="5135:5252" ph="SELECT * FRO... CARTDETAILS" />
-            <marker date="1489760862580" expanded="true" signature="5135:5253" ph="SELECT MODEL... CARTDETAILS" />
-            <marker date="1489760862580" expanded="true" signature="6515:6577" ph="SELECT EMPLO... EMPLOYEE" />
-            <marker date="1489760862580" expanded="true" signature="7120:7283" ph="UPDATE ORDER... " />
-            <marker date="1489760862580" expanded="true" signature="8307:8343" ph="SELECT * FRO... ORDER" />
-            <marker date="1489760862580" expanded="true" signature="11824:12486" ph="SELECT DISTI... CLOTHINGUNIT" />
-            <marker date="1489760862580" expanded="true" signature="18628:18780" ph="INSERT INTO EMPLOYEE... " />
-            <marker date="1489760862580" expanded="true" signature="18831:18925" ph="SELECT EID F... EMPLOYEE" />
-            <marker date="1489760862580" expanded="true" signature="20680:20722" ph="SELECT PASSW... EMPLOYEE" />
-            <marker date="1489760862580" expanded="true" signature="24580:24654" ph="SELECT missi... missingValue" />
-            <marker date="1489760862580" expanded="true" signature="25711:25758" ph="SELECT missi... missingValue" />
-            <marker date="1489760862580" expanded="true" signature="26656:26890" ph="SELECT COLOR... CLOTHINGUNIT" />
-            <marker date="1489760862580" expanded="true" signature="28142:28186" ph="SELECT ORDER... ORDER" />
-            <marker date="1489760862580" expanded="true" signature="28850:28886" ph="SELECT * FRO... ORDER" />
+            <marker date="1489798940118" expanded="true" signature="6440:6468" ph="SELECT * FRO... RESTOCKREQUEST" />
+            <marker date="1489798940118" expanded="true" signature="6797:6835" ph="SELECT ENAME... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="6797:6836" ph="SELECT ENAME... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="8296:8303" ph="UPDATE CLOTH... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8384" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8440" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8452" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8484" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8485" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8511" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8512" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8513" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8526" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8559:8585" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8633" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8634" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8660" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8661" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8672" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8676" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="false" signature="9240:10411" ph="{...}" />
+            <marker date="1489798940118" expanded="true" signature="9968:10034" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10050" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10053" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10055" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10072" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10085" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10087" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10099" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10101" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="10768:10886" ph="SELECT MODEL... CARTDETAILS" />
+            <marker date="1489798940118" expanded="true" signature="12188:12250" ph="SELECT EMPLO... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="12793:12956" ph="UPDATE ORDER... " />
+            <marker date="1489798940118" expanded="true" signature="13980:14016" ph="SELECT * FRO... ORDER" />
+            <marker date="1489798940118" expanded="true" signature="17497:18159" ph="SELECT DISTI... CLOTHINGUNIT" />
+            <marker date="1489798940118" expanded="true" signature="24409:24561" ph="INSERT INTO EMPLOYEE... " />
+            <marker date="1489798940118" expanded="true" signature="24612:24706" ph="SELECT EID F... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="26461:26503" ph="SELECT PASSW... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="30361:30435" ph="SELECT missi... missingValue" />
+            <marker date="1489798940118" expanded="true" signature="31492:31539" ph="SELECT missi... missingValue" />
+            <marker date="1489798940118" expanded="true" signature="32458:32692" ph="SELECT COLOR... CLOTHINGUNIT" />
+            <marker date="1489798940118" expanded="true" signature="33940:33984" ph="SELECT ORDER... ORDER" />
+            <marker date="1489798940118" expanded="true" signature="34648:34684" ph="SELECT * FRO... ORDER" />
           </folding>
         </state>
       </provider>
@@ -1180,7 +1289,10 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onModifyOrder#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onRequestRestock#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onViewRestockRequests#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onRestockSubmit#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onViewCardInfo#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onRefundOrder#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onSearchOrder#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onSubmitClothSearch#0;class#MontrealApparel#0" expanded="false" />
@@ -1189,32 +1301,216 @@
             <element signature="method#onSelectThisMonth#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onSubmitEid#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onViewYourOrders#0;class#MontrealApparel#0" expanded="false" />
-            <element signature="method#onEmployeeLogin#0;class#MontrealApparel#0" expanded="false" />
-            <element signature="method#onLogin#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onCreateEmployeeRequest#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#validatePassword#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#MakeConnection#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#isValidDateFormat#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#SendStandardQuery#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#SendStandardQuery#1;class#MontrealApparel#0" expanded="false" />
-            <element signature="method#QueryUnitColors#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#getToday#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#checkIfPurchase#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#checkIfOrderValid#0;class#MontrealApparel#0" expanded="false" />
-            <marker date="1489760862580" expanded="true" signature="5135:5252" ph="SELECT * FRO... CARTDETAILS" />
-            <marker date="1489760862580" expanded="true" signature="5135:5253" ph="SELECT MODEL... CARTDETAILS" />
-            <marker date="1489760862580" expanded="true" signature="6515:6577" ph="SELECT EMPLO... EMPLOYEE" />
-            <marker date="1489760862580" expanded="true" signature="7120:7283" ph="UPDATE ORDER... " />
-            <marker date="1489760862580" expanded="true" signature="8307:8343" ph="SELECT * FRO... ORDER" />
-            <marker date="1489760862580" expanded="true" signature="11824:12486" ph="SELECT DISTI... CLOTHINGUNIT" />
-            <marker date="1489760862580" expanded="true" signature="18628:18780" ph="INSERT INTO EMPLOYEE... " />
-            <marker date="1489760862580" expanded="true" signature="18831:18925" ph="SELECT EID F... EMPLOYEE" />
-            <marker date="1489760862580" expanded="true" signature="20680:20722" ph="SELECT PASSW... EMPLOYEE" />
-            <marker date="1489760862580" expanded="true" signature="24580:24654" ph="SELECT missi... missingValue" />
-            <marker date="1489760862580" expanded="true" signature="25711:25758" ph="SELECT missi... missingValue" />
-            <marker date="1489760862580" expanded="true" signature="26656:26890" ph="SELECT COLOR... CLOTHINGUNIT" />
-            <marker date="1489760862580" expanded="true" signature="28142:28186" ph="SELECT ORDER... ORDER" />
-            <marker date="1489760862580" expanded="true" signature="28850:28886" ph="SELECT * FRO... ORDER" />
+            <marker date="1489798940118" expanded="true" signature="6440:6468" ph="SELECT * FRO... RESTOCKREQUEST" />
+            <marker date="1489798940118" expanded="true" signature="6797:6835" ph="SELECT ENAME... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="6797:6836" ph="SELECT ENAME... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="8296:8303" ph="UPDATE CLOTH... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8384" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8440" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8452" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8484" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8485" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8511" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8512" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8513" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8526" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8559:8585" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8633" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8634" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8660" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8661" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8672" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8676" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="false" signature="9240:10411" ph="{...}" />
+            <marker date="1489798940118" expanded="true" signature="9968:10034" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10050" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10053" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10055" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10072" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10085" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10087" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10099" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10101" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="10768:10886" ph="SELECT MODEL... CARTDETAILS" />
+            <marker date="1489798940118" expanded="true" signature="12188:12250" ph="SELECT EMPLO... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="12793:12956" ph="UPDATE ORDER... " />
+            <marker date="1489798940118" expanded="true" signature="13980:14016" ph="SELECT * FRO... ORDER" />
+            <marker date="1489798940118" expanded="true" signature="17497:18159" ph="SELECT DISTI... CLOTHINGUNIT" />
+            <marker date="1489798940118" expanded="true" signature="24409:24561" ph="INSERT INTO EMPLOYEE... " />
+            <marker date="1489798940118" expanded="true" signature="24612:24706" ph="SELECT EID F... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="26461:26503" ph="SELECT PASSW... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="30361:30435" ph="SELECT missi... missingValue" />
+            <marker date="1489798940118" expanded="true" signature="31492:31539" ph="SELECT missi... missingValue" />
+            <marker date="1489798940118" expanded="true" signature="32458:32692" ph="SELECT COLOR... CLOTHINGUNIT" />
+            <marker date="1489798940118" expanded="true" signature="33940:33984" ph="SELECT ORDER... ORDER" />
+            <marker date="1489798940118" expanded="true" signature="34648:34684" ph="SELECT * FRO... ORDER" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MontrealApparel.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MontrealApparel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onRequestRestock#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onViewRestockRequests#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onRestockSubmit#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onViewCardInfo#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onRefundOrder#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSearchOrder#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSubmitClothSearch#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSearchClothes#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSelectAllTime#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSelectThisMonth#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSubmitEid#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onViewYourOrders#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onCreateEmployeeRequest#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#validatePassword#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#MakeConnection#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#isValidDateFormat#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#SendStandardQuery#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#SendStandardQuery#1;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#getToday#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#checkIfPurchase#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#checkIfOrderValid#0;class#MontrealApparel#0" expanded="false" />
+            <marker date="1489798940118" expanded="true" signature="6440:6468" ph="SELECT * FRO... RESTOCKREQUEST" />
+            <marker date="1489798940118" expanded="true" signature="6797:6835" ph="SELECT ENAME... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="6797:6836" ph="SELECT ENAME... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="8296:8303" ph="UPDATE CLOTH... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8384" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8440" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8452" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8484" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8485" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8511" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8512" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8513" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8526" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8559:8585" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8633" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8634" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8660" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8661" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8672" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8676" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="false" signature="9240:10411" ph="{...}" />
+            <marker date="1489798940118" expanded="true" signature="9968:10034" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10050" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10053" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10055" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10072" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10085" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10087" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10099" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10101" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="10768:10886" ph="SELECT MODEL... CARTDETAILS" />
+            <marker date="1489798940118" expanded="true" signature="12188:12250" ph="SELECT EMPLO... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="12793:12956" ph="UPDATE ORDER... " />
+            <marker date="1489798940118" expanded="true" signature="13980:14016" ph="SELECT * FRO... ORDER" />
+            <marker date="1489798940118" expanded="true" signature="17497:18159" ph="SELECT DISTI... CLOTHINGUNIT" />
+            <marker date="1489798940118" expanded="true" signature="24409:24561" ph="INSERT INTO EMPLOYEE... " />
+            <marker date="1489798940118" expanded="true" signature="24612:24706" ph="SELECT EID F... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="26461:26503" ph="SELECT PASSW... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="30361:30435" ph="SELECT missi... missingValue" />
+            <marker date="1489798940118" expanded="true" signature="31492:31539" ph="SELECT missi... missingValue" />
+            <marker date="1489798940118" expanded="true" signature="32458:32692" ph="SELECT COLOR... CLOTHINGUNIT" />
+            <marker date="1489798940118" expanded="true" signature="33940:33984" ph="SELECT ORDER... ORDER" />
+            <marker date="1489798940118" expanded="true" signature="34648:34684" ph="SELECT * FRO... ORDER" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MontrealApparel.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MontrealApparel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#onRequestRestock#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onViewRestockRequests#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onRestockSubmit#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onViewCardInfo#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onRefundOrder#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSearchOrder#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSubmitClothSearch#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSearchClothes#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSelectAllTime#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSelectThisMonth#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onSubmitEid#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onViewYourOrders#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onCreateEmployeeRequest#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#validatePassword#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#MakeConnection#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#isValidDateFormat#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#SendStandardQuery#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#SendStandardQuery#1;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#getToday#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#checkIfPurchase#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#checkIfOrderValid#0;class#MontrealApparel#0" expanded="false" />
+            <marker date="1489798940118" expanded="true" signature="6440:6468" ph="SELECT * FRO... RESTOCKREQUEST" />
+            <marker date="1489798940118" expanded="true" signature="6797:6835" ph="SELECT ENAME... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="6797:6836" ph="SELECT ENAME... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="8296:8303" ph="UPDATE CLOTH... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8384" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8440" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8452" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8484" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8485" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8511" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8512" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8513" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8526" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8559:8585" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8633" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8634" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8660" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8661" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8672" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8676" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="false" signature="9240:10411" ph="{...}" />
+            <marker date="1489798940118" expanded="true" signature="9968:10034" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10050" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10053" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10055" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10072" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10085" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10087" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10099" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10101" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="10768:10886" ph="SELECT MODEL... CARTDETAILS" />
+            <marker date="1489798940118" expanded="true" signature="12188:12250" ph="SELECT EMPLO... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="12793:12956" ph="UPDATE ORDER... " />
+            <marker date="1489798940118" expanded="true" signature="13980:14016" ph="SELECT * FRO... ORDER" />
+            <marker date="1489798940118" expanded="true" signature="17497:18159" ph="SELECT DISTI... CLOTHINGUNIT" />
+            <marker date="1489798940118" expanded="true" signature="24409:24561" ph="INSERT INTO EMPLOYEE... " />
+            <marker date="1489798940118" expanded="true" signature="24612:24706" ph="SELECT EID F... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="26461:26503" ph="SELECT PASSW... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="30361:30435" ph="SELECT missi... missingValue" />
+            <marker date="1489798940118" expanded="true" signature="31492:31539" ph="SELECT missi... missingValue" />
+            <marker date="1489798940118" expanded="true" signature="32458:32692" ph="SELECT COLOR... CLOTHINGUNIT" />
+            <marker date="1489798940118" expanded="true" signature="33940:33984" ph="SELECT ORDER... ORDER" />
+            <marker date="1489798940118" expanded="true" signature="34648:34684" ph="SELECT * FRO... ORDER" />
           </folding>
         </state>
       </provider>
@@ -1230,7 +1526,10 @@
           <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onModifyOrder#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onRequestRestock#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onViewRestockRequests#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onRestockSubmit#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onViewCardInfo#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onRefundOrder#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onSearchOrder#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onSubmitClothSearch#0;class#MontrealApparel#0" expanded="false" />
@@ -1239,32 +1538,58 @@
             <element signature="method#onSelectThisMonth#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onSubmitEid#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onViewYourOrders#0;class#MontrealApparel#0" expanded="false" />
-            <element signature="method#onEmployeeLogin#0;class#MontrealApparel#0" expanded="false" />
-            <element signature="method#onLogin#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onCreateEmployeeRequest#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#validatePassword#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#MakeConnection#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#isValidDateFormat#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#SendStandardQuery#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#SendStandardQuery#1;class#MontrealApparel#0" expanded="false" />
-            <element signature="method#QueryUnitColors#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#getToday#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#checkIfPurchase#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#checkIfOrderValid#0;class#MontrealApparel#0" expanded="false" />
-            <marker date="1489760862580" expanded="true" signature="5135:5252" ph="SELECT * FRO... CARTDETAILS" />
-            <marker date="1489760862580" expanded="true" signature="5135:5253" ph="SELECT MODEL... CARTDETAILS" />
-            <marker date="1489760862580" expanded="true" signature="6515:6577" ph="SELECT EMPLO... EMPLOYEE" />
-            <marker date="1489760862580" expanded="true" signature="7120:7283" ph="UPDATE ORDER... " />
-            <marker date="1489760862580" expanded="true" signature="8307:8343" ph="SELECT * FRO... ORDER" />
-            <marker date="1489760862580" expanded="true" signature="11824:12486" ph="SELECT DISTI... CLOTHINGUNIT" />
-            <marker date="1489760862580" expanded="true" signature="18628:18780" ph="INSERT INTO EMPLOYEE... " />
-            <marker date="1489760862580" expanded="true" signature="18831:18925" ph="SELECT EID F... EMPLOYEE" />
-            <marker date="1489760862580" expanded="true" signature="20680:20722" ph="SELECT PASSW... EMPLOYEE" />
-            <marker date="1489760862580" expanded="true" signature="24580:24654" ph="SELECT missi... missingValue" />
-            <marker date="1489760862580" expanded="true" signature="25711:25758" ph="SELECT missi... missingValue" />
-            <marker date="1489760862580" expanded="true" signature="26656:26890" ph="SELECT COLOR... CLOTHINGUNIT" />
-            <marker date="1489760862580" expanded="true" signature="28142:28186" ph="SELECT ORDER... ORDER" />
-            <marker date="1489760862580" expanded="true" signature="28850:28886" ph="SELECT * FRO... ORDER" />
+            <marker date="1489798940118" expanded="true" signature="6440:6468" ph="SELECT * FRO... RESTOCKREQUEST" />
+            <marker date="1489798940118" expanded="true" signature="6797:6835" ph="SELECT ENAME... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="6797:6836" ph="SELECT ENAME... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="8296:8303" ph="UPDATE CLOTH... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8384" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8440" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8452" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8484" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8485" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8511" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8512" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8513" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8526" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8559:8585" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8633" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8634" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8660" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8661" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8672" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8676" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="false" signature="9240:10411" ph="{...}" />
+            <marker date="1489798940118" expanded="true" signature="9968:10034" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10050" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10053" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10055" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10072" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10085" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10087" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10099" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10101" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="10768:10886" ph="SELECT MODEL... CARTDETAILS" />
+            <marker date="1489798940118" expanded="true" signature="12188:12250" ph="SELECT EMPLO... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="12793:12956" ph="UPDATE ORDER... " />
+            <marker date="1489798940118" expanded="true" signature="13980:14016" ph="SELECT * FRO... ORDER" />
+            <marker date="1489798940118" expanded="true" signature="17497:18159" ph="SELECT DISTI... CLOTHINGUNIT" />
+            <marker date="1489798940118" expanded="true" signature="24409:24561" ph="INSERT INTO EMPLOYEE... " />
+            <marker date="1489798940118" expanded="true" signature="24612:24706" ph="SELECT EID F... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="26461:26503" ph="SELECT PASSW... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="30361:30435" ph="SELECT missi... missingValue" />
+            <marker date="1489798940118" expanded="true" signature="31492:31539" ph="SELECT missi... missingValue" />
+            <marker date="1489798940118" expanded="true" signature="32458:32692" ph="SELECT COLOR... CLOTHINGUNIT" />
+            <marker date="1489798940118" expanded="true" signature="33940:33984" ph="SELECT ORDER... ORDER" />
+            <marker date="1489798940118" expanded="true" signature="34648:34684" ph="SELECT * FRO... ORDER" />
           </folding>
         </state>
       </provider>
@@ -1332,32 +1657,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
           <caret line="5619" column="29" lean-forward="false" selection-start-line="5619" selection-start-column="29" selection-end-line="5619" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77e48001-9ac8-477a-aa05-aac0e0ba2e1a/console.sql" />
     <entry file="dbDummy://dbtable:/113d9036/77e48001-9ac8-477a-aa05-aac0e0ba2e1a/CS421G42.ORDER" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/awt/event/ActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="461">
           <caret line="49" column="16" lean-forward="false" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/77e48001-9ac8-477a-aa05-aac0e0ba2e1a/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MontrealApparel.form">
-      <provider selected="true" editor-type-id="ui-designer">
-        <state />
+    <entry file="dbDummy://dbtable:/113d9036/77e48001-9ac8-477a-aa05-aac0e0ba2e1a/CS421G42.RESTOCKREQUEST">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MontrealApparel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="128" column="35" lean-forward="true" selection-start-line="128" selection-start-column="35" selection-end-line="128" selection-end-column="35" />
+        <state relative-caret-position="309">
+          <caret line="470" column="37" lean-forward="false" selection-start-line="470" selection-start-column="37" selection-end-line="470" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#onModifyOrder#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onRequestRestock#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onViewRestockRequests#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onRestockSubmit#0;class#MontrealApparel#0" expanded="false" />
+            <element signature="method#onViewCardInfo#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onRefundOrder#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onSearchOrder#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onSubmitClothSearch#0;class#MontrealApparel#0" expanded="false" />
@@ -1366,34 +1707,65 @@
             <element signature="method#onSelectThisMonth#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onSubmitEid#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onViewYourOrders#0;class#MontrealApparel#0" expanded="false" />
-            <element signature="method#onEmployeeLogin#0;class#MontrealApparel#0" expanded="false" />
-            <element signature="method#onLogin#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#onCreateEmployeeRequest#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#validatePassword#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#MakeConnection#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#isValidDateFormat#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#SendStandardQuery#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#SendStandardQuery#1;class#MontrealApparel#0" expanded="false" />
-            <element signature="method#QueryUnitColors#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#getToday#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#checkIfPurchase#0;class#MontrealApparel#0" expanded="false" />
             <element signature="method#checkIfOrderValid#0;class#MontrealApparel#0" expanded="false" />
-            <marker date="1489760862580" expanded="true" signature="5135:5252" ph="SELECT * FRO... CARTDETAILS" />
-            <marker date="1489760862580" expanded="true" signature="5135:5253" ph="SELECT MODEL... CARTDETAILS" />
-            <marker date="1489760862580" expanded="true" signature="6515:6577" ph="SELECT EMPLO... EMPLOYEE" />
-            <marker date="1489760862580" expanded="true" signature="7120:7283" ph="UPDATE ORDER... " />
-            <marker date="1489760862580" expanded="true" signature="8307:8343" ph="SELECT * FRO... ORDER" />
-            <marker date="1489760862580" expanded="true" signature="11824:12486" ph="SELECT DISTI... CLOTHINGUNIT" />
-            <marker date="1489760862580" expanded="true" signature="18628:18780" ph="INSERT INTO EMPLOYEE... " />
-            <marker date="1489760862580" expanded="true" signature="18831:18925" ph="SELECT EID F... EMPLOYEE" />
-            <marker date="1489760862580" expanded="true" signature="20680:20722" ph="SELECT PASSW... EMPLOYEE" />
-            <marker date="1489760862580" expanded="true" signature="24580:24654" ph="SELECT missi... missingValue" />
-            <marker date="1489760862580" expanded="true" signature="25711:25758" ph="SELECT missi... missingValue" />
-            <marker date="1489760862580" expanded="true" signature="26656:26890" ph="SELECT COLOR... CLOTHINGUNIT" />
-            <marker date="1489760862580" expanded="true" signature="28142:28186" ph="SELECT ORDER... ORDER" />
-            <marker date="1489760862580" expanded="true" signature="28850:28886" ph="SELECT * FRO... ORDER" />
+            <marker date="1489798940118" expanded="true" signature="6440:6468" ph="SELECT * FRO... RESTOCKREQUEST" />
+            <marker date="1489798940118" expanded="true" signature="6797:6835" ph="SELECT ENAME... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="6797:6836" ph="SELECT ENAME... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="8296:8303" ph="UPDATE CLOTH... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8384" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8440" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8452" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8484" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8485" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8511" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8512" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8513" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8296:8526" ph="UPDATE UNITS... " />
+            <marker date="1489798940118" expanded="true" signature="8559:8585" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8633" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8634" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8660" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8661" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8672" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="true" signature="8559:8676" ph="DELETE FROM " />
+            <marker date="1489798940118" expanded="false" signature="9240:10411" ph="{...}" />
+            <marker date="1489798940118" expanded="true" signature="9968:10034" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10050" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10053" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10055" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10072" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10085" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10087" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10099" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="9968:10101" ph="INSERT INTO RESTOCKREQUEST... " />
+            <marker date="1489798940118" expanded="true" signature="10768:10886" ph="SELECT MODEL... CARTDETAILS" />
+            <marker date="1489798940118" expanded="true" signature="12188:12250" ph="SELECT EMPLO... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="12793:12956" ph="UPDATE ORDER... " />
+            <marker date="1489798940118" expanded="true" signature="13980:14016" ph="SELECT * FRO... ORDER" />
+            <marker date="1489798940118" expanded="true" signature="17497:18159" ph="SELECT DISTI... CLOTHINGUNIT" />
+            <marker date="1489798940118" expanded="true" signature="24409:24561" ph="INSERT INTO EMPLOYEE... " />
+            <marker date="1489798940118" expanded="true" signature="24612:24706" ph="SELECT EID F... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="26461:26503" ph="SELECT PASSW... EMPLOYEE" />
+            <marker date="1489798940118" expanded="true" signature="30361:30435" ph="SELECT missi... missingValue" />
+            <marker date="1489798940118" expanded="true" signature="31492:31539" ph="SELECT missi... missingValue" />
+            <marker date="1489798940118" expanded="true" signature="32458:32692" ph="SELECT COLOR... CLOTHINGUNIT" />
+            <marker date="1489798940118" expanded="true" signature="33940:33984" ph="SELECT ORDER... ORDER" />
+            <marker date="1489798940118" expanded="true" signature="34648:34684" ph="SELECT * FRO... ORDER" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MontrealApparel.form">
+      <provider selected="true" editor-type-id="ui-designer">
+        <state />
       </provider>
     </entry>
   </component>
